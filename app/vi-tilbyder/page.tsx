@@ -14,19 +14,25 @@ export default function viTilbyder() {
           <p className="mx-auto max-w-2xl text-xl leading-relaxed text-gray-700">
             Professionel psykologisk hjælp tilpasset dine behov og livssituation
           </p>
-          
+
           {/* Quick Navigation */}
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
-            <Link href="#samtaleterapi"
-              className="inline-block rounded-full bg-white px-6 py-3 font-semibold text-gray-800 shadow-md transition-all hover:bg-orange-500 hover:text-white">
+            <Link
+              href="#samtaleterapi"
+              className="inline-block rounded-full bg-white px-6 py-3 font-semibold text-gray-800 shadow-md transition-all hover:bg-orange-500 hover:text-white"
+            >
               🗣️ Samtaleterapi
             </Link>
-            <Link href="#til-dig-som-er-ung"
-              className="inline-block rounded-full bg-white px-6 py-3 font-semibold text-gray-800 shadow-md transition-all hover:bg-orange-500 hover:text-white">
+            <Link
+              href="#til-dig-som-er-ung"
+              className="inline-block rounded-full bg-white px-6 py-3 font-semibold text-gray-800 shadow-md transition-all hover:bg-orange-500 hover:text-white"
+            >
               👥 Til unge
             </Link>
-            <Link href="#forældresparring"
-              className="inline-block rounded-full bg-white px-6 py-3 font-semibold text-gray-800 shadow-md transition-all hover:bg-orange-500 hover:text-white">
+            <Link
+              href="#forældresparring"
+              className="inline-block rounded-full bg-white px-6 py-3 font-semibold text-gray-800 shadow-md transition-all hover:bg-orange-500 hover:text-white"
+            >
               👨‍👩‍👧‍👦 Forældresparring
             </Link>
           </div>
@@ -45,31 +51,40 @@ export default function viTilbyder() {
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
                     <span className="text-2xl">🔄</span>
-                    <p className="text-gray-700">Har dit liv taget en uventet drejning?</p>
+                    <p className="text-gray-700">
+                      Har dit liv taget en uventet drejning?
+                    </p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <span className="text-2xl">🎯</span>
-                    <p className="text-gray-700">Udvikler dit liv sig ikke i den retning, du ønsker?</p>
+                    <p className="text-gray-700">
+                      Udvikler dit liv sig ikke i den retning, du ønsker?
+                    </p>
                   </div>
                 </div>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
                     <span className="text-2xl">🧠</span>
-                    <p className="text-gray-700">Føler du ikke, du er i kontrol over dine tanker?</p>
+                    <p className="text-gray-700">
+                      Føler du ikke, du er i kontrol over dine tanker?
+                    </p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <span className="text-2xl">💪</span>
-                    <p className="text-gray-700">Ønsker du at arbejde med dig selv og udvikle dig?</p>
+                    <p className="text-gray-700">
+                      Ønsker du at arbejde med dig selv og udvikle dig?
+                    </p>
                   </div>
                 </div>
               </div>
-              
+
               <div className="mt-8 rounded-lg bg-orange-50 p-6">
                 <p className="text-lg leading-relaxed text-gray-700">
-                  <strong>Psykologtid Vejle</strong> er for dig, som ønsker at arbejde med dig selv 
-                  og få øje på de vinkler, som kan være svære at finde og udvikle på alene. 
-                  Hos os oplever du nysgerrighed på din livshistorie og fokus på, hvad du 
-                  ønsker for dig selv fremadrettet.
+                  <strong>Psykologtid Vejle</strong> er for dig, som ønsker at
+                  arbejde med dig selv og få øje på de vinkler, som kan være
+                  svære at finde og udvikle på alene. Hos os oplever du
+                  nysgerrighed på din livshistorie og fokus på, hvad du ønsker
+                  for dig selv fremadrettet.
                 </p>
               </div>
             </div>
@@ -78,10 +93,7 @@ export default function viTilbyder() {
       </section>
 
       {/* Samtaleterapi Section */}
-      <section
-        id="samtaleterapi"
-        className="scroll-mt-12 bg-white py-16"
-      >
+      <section id="samtaleterapi" className="scroll-mt-12 bg-white py-16">
         <div className="container mx-auto px-6">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="space-y-6">
@@ -99,9 +111,10 @@ export default function viTilbyder() {
                   Hvad kan du forvente?
                 </h3>
                 <p className="leading-relaxed text-gray-700">
-                  Når du vælger samtaleterapi hos os, bliver du budt velkommen i et rum, 
-                  hvor vi arbejder med det, du tager op. Vi sørger for, at du får mulighed 
-                  for at bringe de emner i spil, som er vigtige for dig.
+                  Når du vælger samtaleterapi hos os, bliver du budt velkommen i
+                  et rum, hvor vi arbejder med det, du tager op. Vi sørger for,
+                  at du får mulighed for at bringe de emner i spil, som er
+                  vigtige for dig.
                 </p>
               </div>
 
@@ -120,19 +133,27 @@ export default function viTilbyder() {
                   </div>
                   <div className="flex items-start space-x-3">
                     <span className="text-orange-500">💼</span>
-                    <span className="text-gray-700">Arbejdsrelaterede problemer</span>
+                    <span className="text-gray-700">
+                      Arbejdsrelaterede problemer
+                    </span>
                   </div>
                   <div className="flex items-start space-x-3">
                     <span className="text-orange-500">🏥</span>
-                    <span className="text-gray-700">Sygdom (dig selv eller pårørende)</span>
+                    <span className="text-gray-700">
+                      Sygdom (dig selv eller pårørende)
+                    </span>
                   </div>
                   <div className="flex items-start space-x-3">
                     <span className="text-orange-500">❓</span>
-                    <span className="text-gray-700">Når noget ikke føles rigtigt</span>
+                    <span className="text-gray-700">
+                      Når noget ikke føles rigtigt
+                    </span>
                   </div>
                   <div className="flex items-start space-x-3">
                     <span className="text-orange-500">🔄</span>
-                    <span className="text-gray-700">Ønsket om personlig udvikling</span>
+                    <span className="text-gray-700">
+                      Ønsket om personlig udvikling
+                    </span>
                   </div>
                 </div>
               </div>
@@ -145,16 +166,28 @@ export default function viTilbyder() {
                 </h3>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
-                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-orange-500 text-sm font-bold text-white">1</span>
-                    <p className="text-gray-700">Ved første samtale afstemmer vi dine håb og forventninger</p>
+                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-orange-500 text-sm font-bold text-white">
+                      1
+                    </span>
+                    <p className="text-gray-700">
+                      Ved første samtale afstemmer vi dine håb og forventninger
+                    </p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-orange-500 text-sm font-bold text-white">2</span>
-                    <p className="text-gray-700">Vi arbejder i dit tempo med de emner, du bringer op</p>
+                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-orange-500 text-sm font-bold text-white">
+                      2
+                    </span>
+                    <p className="text-gray-700">
+                      Vi arbejder i dit tempo med de emner, du bringer op
+                    </p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-orange-500 text-sm font-bold text-white">3</span>
-                    <p className="text-gray-700">Sammen finder vi nye vinkler og udvikling</p>
+                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-orange-500 text-sm font-bold text-white">
+                      3
+                    </span>
+                    <p className="text-gray-700">
+                      Sammen finder vi nye vinkler og udvikling
+                    </p>
                   </div>
                 </div>
               </div>
@@ -184,7 +217,7 @@ export default function viTilbyder() {
               </div>
 
               <div className="text-center">
-                <Link 
+                <Link
                   href="/kontakt"
                   className="inline-block rounded-full bg-orange-500 px-8 py-3 font-semibold text-white transition-all hover:bg-orange-600"
                 >
@@ -231,19 +264,27 @@ export default function viTilbyder() {
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
                     <span className="text-orange-500">🎯</span>
-                    <p className="text-gray-700">Mange krav om at gøre det "rigtige" med sit liv</p>
+                    <p className="text-gray-700">
+                      Mange krav om at gøre det "rigtige" med sit liv
+                    </p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <span className="text-orange-500">🤔</span>
-                    <p className="text-gray-700">Svært at navigere i, hvem man selv er</p>
+                    <p className="text-gray-700">
+                      Svært at navigere i, hvem man selv er
+                    </p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <span className="text-orange-500">📚</span>
-                    <p className="text-gray-700">Forventninger om uddannelse og fremtid</p>
+                    <p className="text-gray-700">
+                      Forventninger om uddannelse og fremtid
+                    </p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <span className="text-orange-500">💭</span>
-                    <p className="text-gray-700">Spørgsmål om selvværd og selvtillid</p>
+                    <p className="text-gray-700">
+                      Spørgsmål om selvværd og selvtillid
+                    </p>
                   </div>
                 </div>
               </div>
@@ -253,47 +294,52 @@ export default function viTilbyder() {
                   Vi forstår udfordringerne
                 </h3>
                 <p className="mb-4 leading-relaxed text-gray-700">
-                  Hos Psykologtid Vejle har vi talt med mange unge, som synes det er svært 
-                  at finde ud af, hvem de er. Det kan være ekstra udfordrende, hvis du har 
-                  haft en svær opvækst eller oplevet grænseoverskridende situationer.
+                  Hos Psykologtid Vejle har vi talt med mange unge, som synes
+                  det er svært at finde ud af, hvem de er. Det kan være ekstra
+                  udfordrende, hvis du har haft en svær opvækst eller oplevet
+                  grænseoverskridende situationer.
                 </p>
                 <blockquote className="border-l-4 border-orange-400 pl-4 italic text-gray-600">
-                  "Man kan ikke ændre på sin fortid, men vi kan have fokus på, hvad du 
-                  ønsker for dig selv i fremtiden."
+                  "Man kan ikke ændre på sin fortid, men vi kan have fokus på,
+                  hvad du ønsker for dig selv i fremtiden."
                 </blockquote>
               </div>
 
               <div className="rounded-lg bg-orange-500 p-6 text-white">
-                <h3 className="mb-4 text-xl font-semibold">
-                  Særligt for unge
-                </h3>
+                <h3 className="mb-4 text-xl font-semibold">Særligt for unge</h3>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
                     <span>💰</span>
                     <div>
                       <p className="font-semibold">Særpris for studerende</p>
-                      <p className="text-sm text-orange-100">950 kr. for unge under 25 år (normalpris 1050 kr.)</p>
+                      <p className="text-sm text-orange-100">
+                        950 kr. for unge under 25 år (normalpris 1050 kr.)
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <span>🛡️</span>
                     <div>
                       <p className="font-semibold">Sikkerhed først</p>
-                      <p className="text-sm text-orange-100">Vi har pligt til at sørge for din sikkerhed</p>
+                      <p className="text-sm text-orange-100">
+                        Vi har pligt til at sørge for din sikkerhed
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <span>👨‍👩‍👧‍👦</span>
                     <div>
                       <p className="font-semibold">Forældre velkommen</p>
-                      <p className="text-sm text-orange-100">Forældre kan altid kontakte os med spørgsmål</p>
+                      <p className="text-sm text-orange-100">
+                        Forældre kan altid kontakte os med spørgsmål
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="text-center">
-                <Link 
+                <Link
                   href="/kontakt"
                   className="inline-block rounded-full bg-orange-500 px-8 py-3 font-semibold text-white transition-all hover:bg-orange-600"
                 >
@@ -306,10 +352,7 @@ export default function viTilbyder() {
       </section>
 
       {/* Forældresparring Section */}
-      <section
-        id="forældresparring"
-        className="scroll-mt-12 bg-white py-16"
-      >
+      <section id="forældresparring" className="scroll-mt-12 bg-white py-16">
         <div className="container mx-auto px-6">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="relative">
@@ -329,7 +372,8 @@ export default function viTilbyder() {
                   👨‍👩‍👧‍👦 Forældresparring
                 </h2>
                 <p className="text-lg text-orange-600">
-                  Professionel vejledning til forældre med fokus på barnets trivsel
+                  Professionel vejledning til forældre med fokus på barnets
+                  trivsel
                 </p>
               </div>
 
@@ -340,15 +384,21 @@ export default function viTilbyder() {
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
                     <span className="text-orange-500">🤔</span>
-                    <p className="text-gray-700">Når du føler dig fastlåst i forældreskabet</p>
+                    <p className="text-gray-700">
+                      Når du føler dig fastlåst i forældreskabet
+                    </p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <span className="text-orange-500">📉</span>
-                    <p className="text-gray-700">Nedadgående trivsel hos dit barn</p>
+                    <p className="text-gray-700">
+                      Nedadgående trivsel hos dit barn
+                    </p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <span className="text-orange-500">🧩</span>
-                    <p className="text-gray-700">Dit barn har en diagnose (autisme, ADHD, ADD, angst)</p>
+                    <p className="text-gray-700">
+                      Dit barn har en diagnose (autisme, ADHD, ADD, angst)
+                    </p>
                   </div>
                   <div className="flex items-start space-x-3">
                     <span className="text-orange-500">❓</span>
@@ -362,47 +412,53 @@ export default function viTilbyder() {
                   Vores tilgang
                 </h3>
                 <p className="mb-4 leading-relaxed text-gray-700">
-                  Vi har et andet fokus end traditionel familierådgivning. Vi har erfaret, 
-                  at ønsket udvikling ofte sker, når voksne bliver bevidste om egne handlinger 
-                  og foretager nødvendige justeringer i hverdagen.
+                  Vi har et andet fokus end traditionel familierådgivning. Vi
+                  har erfaret, at ønsket udvikling ofte sker, når voksne bliver
+                  bevidste om egne handlinger og foretager nødvendige
+                  justeringer i hverdagen.
                 </p>
                 <blockquote className="border-l-4 border-orange-400 pl-4 italic text-gray-600">
-                  "Det er ikke børnene, der i udgangspunktet skal ændre på noget, 
-                  men i stedet de voksne omkring dem, der skal arbejde med rammerne."
+                  "Det er ikke børnene, der i udgangspunktet skal ændre på
+                  noget, men i stedet de voksne omkring dem, der skal arbejde
+                  med rammerne."
                 </blockquote>
               </div>
 
               <div className="rounded-lg bg-orange-500 p-6 text-white">
-                <h3 className="mb-4 text-xl font-semibold">
-                  Vores erfaring
-                </h3>
+                <h3 className="mb-4 text-xl font-semibold">Vores erfaring</h3>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
                     <span>🏫</span>
                     <div>
                       <p className="font-semibold">PPR-erfaring</p>
-                      <p className="text-sm text-orange-100">Flere års erfaring fra Pædagogisk Psykologisk Rådgivning</p>
+                      <p className="text-sm text-orange-100">
+                        Flere års erfaring fra Pædagogisk Psykologisk Rådgivning
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <span>👥</span>
                     <div>
                       <p className="font-semibold">Tværfagligt samarbejde</p>
-                      <p className="text-sm text-orange-100">Erfaring med skoler, dagtilbud og familier</p>
+                      <p className="text-sm text-orange-100">
+                        Erfaring med skoler, dagtilbud og familier
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <span>🎯</span>
                     <div>
                       <p className="font-semibold">Fokus på trivsel</p>
-                      <p className="text-sm text-orange-100">Barnets udvikling og handlemuligheder i centrum</p>
+                      <p className="text-sm text-orange-100">
+                        Barnets udvikling og handlemuligheder i centrum
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
 
               <div className="text-center">
-                <Link 
+                <Link
                   href="/kontakt"
                   className="inline-block rounded-full bg-orange-500 px-8 py-3 font-semibold text-white transition-all hover:bg-orange-600"
                 >

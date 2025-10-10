@@ -12,7 +12,7 @@ export default function OmOs() {
             Mød vores psykologer
           </h1>
           <p className="mx-auto max-w-2xl text-xl leading-relaxed text-gray-700">
-            Vi er Kamilla og Thea - to autoriserede psykologer med passion for 
+            Vi er Kamilla og Thea - to autoriserede psykologer med passion for
             at hjælpe mennesker videre i livet
           </p>
         </div>
@@ -39,7 +39,7 @@ export default function OmOs() {
                 </div>
               </div>
             </div>
-            
+
             <div className="space-y-6">
               <div>
                 <h2 className="mb-2 text-3xl font-bold text-gray-800">
@@ -49,19 +49,22 @@ export default function OmOs() {
                   Psykolog, Københavns Universitet 2015
                 </p>
               </div>
-              
+
               <div className="rounded-lg bg-white p-6 shadow-lg">
                 <h3 className="mb-4 text-xl font-semibold text-gray-800">
                   Baggrund & Erfaring
                 </h3>
                 <p className="mb-4 leading-relaxed text-gray-700">
-                  Jeg er uddannet psykolog ved Københavns Universitet i 2015 og havde 
-                  under min studietid et særligt fokus på arbejdsmiljø, herunder mobning og stress. 
-                  Jeg er autoriseret af Psykolognævnet.
+                  Jeg er uddannet psykolog ved Københavns Universitet i 2015 og
+                  havde under min studietid et særligt fokus på arbejdsmiljø,
+                  herunder mobning og stress. Jeg er autoriseret af
+                  Psykolognævnet.
                 </p>
                 <p className="leading-relaxed text-gray-700">
-                  Som ansat hos Kolding Kommunes PPR-kontor (Pædagogisk Psykologisk Rådgivning) 
-                  har jeg på de forskellige ungdomsuddannelser varetaget samtaleforløb med unge studerende.
+                  Som ansat hos Kolding Kommunes PPR-kontor (Pædagogisk
+                  Psykologisk Rådgivning) har jeg på de forskellige
+                  ungdomsuddannelser varetaget samtaleforløb med unge
+                  studerende.
                 </p>
               </div>
 
@@ -102,20 +105,19 @@ export default function OmOs() {
                   Min tilgang
                 </h3>
                 <blockquote className="mb-4 border-l-4 border-orange-400 pl-4 italic text-gray-700">
-                  "Hos mig vil du opleve, at det er hvad du har brug for, der er det vigtige. 
-                  En udvikling kan først finde sted, når du oplever at være tilpas med at 
-                  tage de emner op, du har brug for at arbejde med."
+                  "Hos mig vil du opleve, at det er hvad du har brug for, der er
+                  det vigtige. En udvikling kan først finde sted, når du oplever
+                  at være tilpas med at tage de emner op, du har brug for at
+                  arbejde med."
                 </blockquote>
                 <p className="text-gray-600">
-                  Vi træder oftest på de stier, som vi kender allerbedst, så det at turde 
-                  gå en ny vej kan være svært. Dem kan vi sammen finde.
+                  Vi træder oftest på de stier, som vi kender allerbedst, så det
+                  at turde gå en ny vej kan være svært. Dem kan vi sammen finde.
                 </p>
               </div>
 
               <div className="rounded-lg bg-orange-500 p-6 text-white">
-                <h3 className="mb-4 text-xl font-semibold">
-                  Kontakt Kamilla
-                </h3>
+                <h3 className="mb-4 text-xl font-semibold">Kontakt Kamilla</h3>
                 <div className="space-y-2">
                   <p className="flex items-center">
                     <span className="mr-3">📞</span>
@@ -144,20 +146,22 @@ export default function OmOs() {
                   Psykolog, Aarhus Universitet 2017
                 </p>
               </div>
-              
+
               <div className="rounded-lg bg-white p-6 shadow-lg">
                 <h3 className="mb-4 text-xl font-semibold text-gray-800">
                   Baggrund & Erfaring
                 </h3>
                 <p className="mb-4 leading-relaxed text-gray-700">
-                  Jeg er uddannet psykolog fra Aarhus Universitet i 2017 og autoriseret af 
-                  Psykolognævnet i 2021. Jeg har tidligere arbejdet med børn, unge og familier 
-                  i kommunalt regi (Pædagogisk Psykologisk Rådgivning).
+                  Jeg er uddannet psykolog fra Aarhus Universitet i 2017 og
+                  autoriseret af Psykolognævnet i 2021. Jeg har tidligere
+                  arbejdet med børn, unge og familier i kommunalt regi
+                  (Pædagogisk Psykologisk Rådgivning).
                 </p>
                 <p className="leading-relaxed text-gray-700">
-                  Under min studietid har jeg desuden haft tilknytning til psykiatrien, 
-                  herunder Klinik for OCD og Angstlidelser, samt varetaget supervision 
-                  og sparring med personale og ledelse på skoler og i dagtilbud.
+                  Under min studietid har jeg desuden haft tilknytning til
+                  psykiatrien, herunder Klinik for OCD og Angstlidelser, samt
+                  varetaget supervision og sparring med personale og ledelse på
+                  skoler og i dagtilbud.
                 </p>
               </div>
 
@@ -198,21 +202,21 @@ export default function OmOs() {
                   Min tilgang
                 </h3>
                 <blockquote className="mb-4 border-l-4 border-orange-400 pl-4 italic text-gray-700">
-                  "I mit arbejde som psykolog lægger jeg stor vægt på at møde dig åbent 
-                  og respektfuldt. Jeg vil altid bestræbe mig på at skabe et trygt og 
-                  roligt rum med plads og tid til at udforske det, der fylder hos dig."
+                  "I mit arbejde som psykolog lægger jeg stor vægt på at møde
+                  dig åbent og respektfuldt. Jeg vil altid bestræbe mig på at
+                  skabe et trygt og roligt rum med plads og tid til at udforske
+                  det, der fylder hos dig."
                 </blockquote>
                 <p className="text-gray-600">
-                  Jeg er optaget af sammenhængen mellem krop, følelser og tanker, samt de 
-                  fortællinger og overbevisninger vi bærer med os. Jeg anvender elementer 
-                  fra narrative og kognitive tilgange.
+                  Jeg er optaget af sammenhængen mellem krop, følelser og
+                  tanker, samt de fortællinger og overbevisninger vi bærer med
+                  os. Jeg anvender elementer fra narrative og kognitive
+                  tilgange.
                 </p>
               </div>
 
               <div className="rounded-lg bg-orange-500 p-6 text-white">
-                <h3 className="mb-4 text-xl font-semibold">
-                  Kontakt Thea
-                </h3>
+                <h3 className="mb-4 text-xl font-semibold">Kontakt Thea</h3>
                 <div className="space-y-2">
                   <p className="flex items-center">
                     <span className="mr-3">📞</span>
@@ -225,7 +229,7 @@ export default function OmOs() {
                 </div>
               </div>
             </div>
-            
+
             <div className="relative lg:order-1">
               <div className="mx-auto max-w-md">
                 <Image
