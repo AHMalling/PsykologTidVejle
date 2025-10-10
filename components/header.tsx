@@ -19,7 +19,7 @@ export const links = [
   },
   {
     name: "Genkender du?",
-    hash: "/genkender-du?",
+    hash: "/genkender-du",
   },
   {
     name: "Priser",

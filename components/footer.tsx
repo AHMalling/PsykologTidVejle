@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-export default function () {
+export default function Footer() {
   return (
     <section className="flex justify-center bg-gray-700 py-5 text-white/90">
       <div className=" col-span-3 col-start-5 text-left ">
