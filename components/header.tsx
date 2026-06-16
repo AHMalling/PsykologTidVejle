@@ -39,13 +39,7 @@ export default function Header() {
   const [color, setColor] = useState(false);
   useEffect(() => {
     const changeColor = () => {
-      if (window.scrollY > 20) {
-        setColor(true);
-        console.log("setcoler er skiftet til true");
-      } else {
-        setColor(false);
-        console.log("setcoler er skiftet til false");
-      }
+      setColor(window.scrollY > 20);
     };
 
     window.addEventListener("scroll", changeColor);

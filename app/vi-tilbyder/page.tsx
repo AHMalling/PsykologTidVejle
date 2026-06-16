@@ -21,19 +21,19 @@ export default function viTilbyder() {
               href="#samtaleterapi"
               className="inline-block rounded-full bg-white px-6 py-3 font-semibold text-gray-800 shadow-md transition-all hover:bg-orange-500 hover:text-white"
             >
-              🗣️ Samtaleterapi
+              Samtaleterapi
             </Link>
             <Link
               href="#til-dig-som-er-ung"
               className="inline-block rounded-full bg-white px-6 py-3 font-semibold text-gray-800 shadow-md transition-all hover:bg-orange-500 hover:text-white"
             >
-              👥 Til unge
+              Til unge
             </Link>
             <Link
               href="#forældresparring"
               className="inline-block rounded-full bg-white px-6 py-3 font-semibold text-gray-800 shadow-md transition-all hover:bg-orange-500 hover:text-white"
             >
-              👨‍👩‍👧‍👦 Forældresparring
+              Forældresparring
             </Link>
           </div>
         </div>
@@ -50,13 +50,13 @@ export default function viTilbyder() {
               <div className="grid gap-6 sm:grid-cols-2">
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <span className="text-2xl">🔄</span>
+                    <span className="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-orange-400"></span>
                     <p className="text-gray-700">
                       Har dit liv taget en uventet drejning?
                     </p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <span className="text-2xl">🎯</span>
+                    <span className="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-orange-400"></span>
                     <p className="text-gray-700">
                       Udvikler dit liv sig ikke i den retning, du ønsker?
                     </p>
@@ -64,13 +64,13 @@ export default function viTilbyder() {
                 </div>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
-                    <span className="text-2xl">🧠</span>
+                    <span className="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-orange-400"></span>
                     <p className="text-gray-700">
                       Føler du ikke, du er i kontrol over dine tanker?
                     </p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <span className="text-2xl">💪</span>
+                    <span className="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-orange-400"></span>
                     <p className="text-gray-700">
                       Ønsker du at arbejde med dig selv og udvikle dig?
                     </p>
@@ -99,7 +99,7 @@ export default function viTilbyder() {
             <div className="space-y-6">
               <div>
                 <h2 className="mb-4 text-3xl font-bold text-gray-800">
-                  🗣️ Samtaleterapi
+                  Samtaleterapi
                 </h2>
                 <p className="text-lg text-orange-600">
                   Professionel terapeutisk støtte i et trygt rum
@@ -123,34 +123,34 @@ export default function viTilbyder() {
                   Hvornår kan samtaleterapi være relevant?
                 </h3>
                 <div className="grid gap-3 sm:grid-cols-2">
-                  <div className="flex items-start space-x-3">
-                    <span className="text-orange-500">💔</span>
+                  <div className="flex items-center space-x-3">
+                    <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-orange-400"></span>
                     <span className="text-gray-700">Brud med partner</span>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <span className="text-orange-500">😢</span>
+                  <div className="flex items-center space-x-3">
+                    <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-orange-400"></span>
                     <span className="text-gray-700">Sorg og tab</span>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <span className="text-orange-500">💼</span>
+                  <div className="flex items-center space-x-3">
+                    <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-orange-400"></span>
                     <span className="text-gray-700">
                       Arbejdsrelaterede problemer
                     </span>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <span className="text-orange-500">🏥</span>
+                  <div className="flex items-center space-x-3">
+                    <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-orange-400"></span>
                     <span className="text-gray-700">
                       Sygdom (dig selv eller pårørende)
                     </span>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <span className="text-orange-500">❓</span>
+                  <div className="flex items-center space-x-3">
+                    <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-orange-400"></span>
                     <span className="text-gray-700">
                       Når noget ikke føles rigtigt
                     </span>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <span className="text-orange-500">🔄</span>
+                  <div className="flex items-center space-x-3">
+                    <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-orange-400"></span>
                     <span className="text-gray-700">
                       Ønsket om personlig udvikling
                     </span>
@@ -194,23 +194,23 @@ export default function viTilbyder() {
 
               <div className="rounded-lg bg-orange-500 p-6 text-white">
                 <h3 className="mb-4 text-xl font-semibold">
-                  ✨ Vores løfte til dig
+                  Vores løfte til dig
                 </h3>
                 <ul className="space-y-2">
-                  <li className="flex items-start space-x-2">
-                    <span>🔒</span>
+                  <li className="flex items-center space-x-2">
+                    <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-orange-200"></span>
                     <span>Fuld tavshedspligt</span>
                   </li>
-                  <li className="flex items-start space-x-2">
-                    <span>🤝</span>
+                  <li className="flex items-center space-x-2">
+                    <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-orange-200"></span>
                     <span>Møde i øjenhøjde med respekt</span>
                   </li>
-                  <li className="flex items-start space-x-2">
-                    <span>⏰</span>
+                  <li className="flex items-center space-x-2">
+                    <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-orange-200"></span>
                     <span>Fleksible intervaller mellem samtaler</span>
                   </li>
-                  <li className="flex items-start space-x-2">
-                    <span>🎯</span>
+                  <li className="flex items-center space-x-2">
+                    <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-orange-200"></span>
                     <span>Tilpasset til lige netop dig</span>
                   </li>
                 </ul>
@@ -250,7 +250,7 @@ export default function viTilbyder() {
             <div className="space-y-6 lg:order-1">
               <div>
                 <h2 className="mb-4 text-3xl font-bold text-gray-800">
-                  👥 Til dig, som er ung (18+)
+                  Til dig, som er ung (18+)
                 </h2>
                 <p className="text-lg text-orange-600">
                   Særlige priser og fokus for unge mennesker
@@ -263,25 +263,25 @@ export default function viTilbyder() {
                 </h3>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
-                    <span className="text-orange-500">🎯</span>
+                    <span className="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-orange-400"></span>
                     <p className="text-gray-700">
                       Mange krav om at gøre det "rigtige" med sit liv
                     </p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <span className="text-orange-500">🤔</span>
+                    <span className="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-orange-400"></span>
                     <p className="text-gray-700">
                       Svært at navigere i, hvem man selv er
                     </p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <span className="text-orange-500">📚</span>
+                    <span className="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-orange-400"></span>
                     <p className="text-gray-700">
                       Forventninger om uddannelse og fremtid
                     </p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <span className="text-orange-500">💭</span>
+                    <span className="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-orange-400"></span>
                     <p className="text-gray-700">
                       Spørgsmål om selvværd og selvtillid
                     </p>
@@ -307,33 +307,24 @@ export default function viTilbyder() {
 
               <div className="rounded-lg bg-orange-500 p-6 text-white">
                 <h3 className="mb-4 text-xl font-semibold">Særligt for unge</h3>
-                <div className="space-y-3">
-                  <div className="flex items-start space-x-3">
-                    <span>💰</span>
-                    <div>
-                      <p className="font-semibold">Særpris for studerende</p>
-                      <p className="text-sm text-orange-100">
-                        950 kr. for unge under 25 år (normalpris 1050 kr.)
-                      </p>
-                    </div>
+                <div className="space-y-4">
+                  <div>
+                    <p className="font-semibold">Særpris for studerende</p>
+                    <p className="text-sm text-orange-100">
+                      950 kr. for unge under 25 år (normalpris 1.050 kr.)
+                    </p>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <span>🛡️</span>
-                    <div>
-                      <p className="font-semibold">Sikkerhed først</p>
-                      <p className="text-sm text-orange-100">
-                        Vi har pligt til at sørge for din sikkerhed
-                      </p>
-                    </div>
+                  <div>
+                    <p className="font-semibold">Sikkerhed først</p>
+                    <p className="text-sm text-orange-100">
+                      Vi har pligt til at sørge for din sikkerhed
+                    </p>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <span>👨‍👩‍👧‍👦</span>
-                    <div>
-                      <p className="font-semibold">Forældre velkommen</p>
-                      <p className="text-sm text-orange-100">
-                        Forældre kan altid kontakte os med spørgsmål
-                      </p>
-                    </div>
+                  <div>
+                    <p className="font-semibold">Forældre velkommen</p>
+                    <p className="text-sm text-orange-100">
+                      Forældre kan altid kontakte os med spørgsmål
+                    </p>
                   </div>
                 </div>
               </div>
@@ -369,7 +360,7 @@ export default function viTilbyder() {
             <div className="space-y-6">
               <div>
                 <h2 className="mb-4 text-3xl font-bold text-gray-800">
-                  👨‍👩‍👧‍👦 Forældresparring
+                  Forældresparring
                 </h2>
                 <p className="text-lg text-orange-600">
                   Professionel vejledning til forældre med fokus på barnets
@@ -383,25 +374,25 @@ export default function viTilbyder() {
                 </h3>
                 <div className="space-y-3">
                   <div className="flex items-start space-x-3">
-                    <span className="text-orange-500">🤔</span>
+                    <span className="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-orange-400"></span>
                     <p className="text-gray-700">
                       Når du føler dig fastlåst i forældreskabet
                     </p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <span className="text-orange-500">📉</span>
+                    <span className="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-orange-400"></span>
                     <p className="text-gray-700">
                       Nedadgående trivsel hos dit barn
                     </p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <span className="text-orange-500">🧩</span>
+                    <span className="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-orange-400"></span>
                     <p className="text-gray-700">
                       Dit barn har en diagnose (autisme, ADHD, ADD, angst)
                     </p>
                   </div>
                   <div className="flex items-start space-x-3">
-                    <span className="text-orange-500">❓</span>
+                    <span className="mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-orange-400"></span>
                     <p className="text-gray-700">Usikkerhed om næste skridt</p>
                   </div>
                 </div>
@@ -426,33 +417,24 @@ export default function viTilbyder() {
 
               <div className="rounded-lg bg-orange-500 p-6 text-white">
                 <h3 className="mb-4 text-xl font-semibold">Vores erfaring</h3>
-                <div className="space-y-3">
-                  <div className="flex items-start space-x-3">
-                    <span>🏫</span>
-                    <div>
-                      <p className="font-semibold">PPR-erfaring</p>
-                      <p className="text-sm text-orange-100">
-                        Flere års erfaring fra Pædagogisk Psykologisk Rådgivning
-                      </p>
-                    </div>
+                <div className="space-y-4">
+                  <div>
+                    <p className="font-semibold">PPR-erfaring</p>
+                    <p className="text-sm text-orange-100">
+                      Flere års erfaring fra Pædagogisk Psykologisk Rådgivning
+                    </p>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <span>👥</span>
-                    <div>
-                      <p className="font-semibold">Tværfagligt samarbejde</p>
-                      <p className="text-sm text-orange-100">
-                        Erfaring med skoler, dagtilbud og familier
-                      </p>
-                    </div>
+                  <div>
+                    <p className="font-semibold">Tværfagligt samarbejde</p>
+                    <p className="text-sm text-orange-100">
+                      Erfaring med skoler, dagtilbud og familier
+                    </p>
                   </div>
-                  <div className="flex items-start space-x-3">
-                    <span>🎯</span>
-                    <div>
-                      <p className="font-semibold">Fokus på trivsel</p>
-                      <p className="text-sm text-orange-100">
-                        Barnets udvikling og handlemuligheder i centrum
-                      </p>
-                    </div>
+                  <div>
+                    <p className="font-semibold">Fokus på trivsel</p>
+                    <p className="text-sm text-orange-100">
+                      Barnets udvikling og handlemuligheder i centrum
+                    </p>
                   </div>
                 </div>
               </div>
