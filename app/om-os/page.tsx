@@ -119,14 +119,14 @@ export default function OmOs() {
               <div className="rounded-lg bg-orange-500 p-6 text-white">
                 <h3 className="mb-4 text-xl font-semibold">Kontakt Kamilla</h3>
                 <div className="space-y-2">
-                  <p className="flex items-center">
-                    <span className="mr-3">📞</span>
-                    <span>Telefon til praksis: 25331100</span>
-                  </p>
-                  <p className="flex items-center">
-                    <span className="mr-3">✉️</span>
-                    <span>kamilla@psykologtidvejle.dk</span>
-                  </p>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-widest text-orange-200">Telefon</p>
+                    <p className="mt-1">25 33 11 00</p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-widest text-orange-200">E-mail</p>
+                    <p className="mt-1">kamilla@psykologtidvejle.dk</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -218,14 +218,14 @@ export default function OmOs() {
               <div className="rounded-lg bg-orange-500 p-6 text-white">
                 <h3 className="mb-4 text-xl font-semibold">Kontakt Thea</h3>
                 <div className="space-y-2">
-                  <p className="flex items-center">
-                    <span className="mr-3">📞</span>
-                    <span>Telefon til praksis: 25331100</span>
-                  </p>
-                  <p className="flex items-center">
-                    <span className="mr-3">✉️</span>
-                    <span>thea@psykologtidvejle.dk</span>
-                  </p>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-widest text-orange-200">Telefon</p>
+                    <p className="mt-1">25 33 11 00</p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-widest text-orange-200">E-mail</p>
+                    <p className="mt-1">thea@psykologtidvejle.dk</p>
+                  </div>
                 </div>
               </div>
             </div>

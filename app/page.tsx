@@ -30,7 +30,7 @@ export default function Home() {
                 href="/kontakt"
                 className="inline-block rounded-full bg-black px-6 py-3 text-center font-semibold text-white transition-all hover:scale-105 hover:bg-orange-600"
               >
-                📞 Bestil tid nu
+                Bestil tid nu
               </Link>
               <Link
                 href="/om-os"
@@ -83,7 +83,7 @@ export default function Home() {
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
             <div className="rounded-lg bg-gray-700/50 p-6 transition-all hover:bg-gray-700">
               <h3 className="mb-4 text-xl font-semibold text-orange-400">
-                🧠 Angst
+                Angst
               </h3>
               <p className="leading-relaxed text-gray-300">
                 Har du <span className="text-orange-400 font-semibold">angst</span>, kan det have 
@@ -95,7 +95,7 @@ export default function Home() {
             
             <div className="rounded-lg bg-gray-700/50 p-6 transition-all hover:bg-gray-700">
               <h3 className="mb-4 text-xl font-semibold text-orange-400">
-                ⚡ Stress
+                Stress
               </h3>
               <p className="leading-relaxed text-gray-300">
                 Ordet <span className="text-orange-400 font-semibold">stress</span> bruges ofte til at 
@@ -107,7 +107,7 @@ export default function Home() {
             
             <div className="rounded-lg bg-gray-700/50 p-6 transition-all hover:bg-gray-700">
               <h3 className="mb-4 text-xl font-semibold text-orange-400">
-                🌧️ Depression
+                Depression
               </h3>
               <p className="leading-relaxed text-gray-300">
                 Lever du et liv med <span className="text-orange-400 font-semibold">depression</span>, 
@@ -118,7 +118,7 @@ export default function Home() {
             
             <div className="rounded-lg bg-gray-700/50 p-6 transition-all hover:bg-gray-700">
               <h3 className="mb-4 text-xl font-semibold text-orange-400">
-                🏷️ Liv med diagnose
+                Liv med diagnose
               </h3>
               <p className="leading-relaxed text-gray-300">
                 At få stillet en diagnose er for mange en lettelse, men kan også medføre nye 
@@ -187,7 +187,7 @@ export default function Home() {
               
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold text-gray-800">
-                  👥 Til dig, som er ung
+                  Til dig, som er ung
                 </h2>
                 <p className="text-lg leading-relaxed text-gray-700">
                   Som ung kan du opleve, at der er mange krav og forventninger til dig, 
@@ -216,7 +216,7 @@ export default function Home() {
             <div className="grid items-center gap-8 lg:grid-cols-2">
               <div className="space-y-6 lg:order-2">
                 <h2 className="text-3xl font-bold text-gray-800">
-                  👨‍👩‍👧‍👦 Forældresparring
+                  Forældresparring
                 </h2>
                 <p className="text-lg leading-relaxed text-gray-700">
                   Vi tilbyder sparring til forældre, der ønsker at forstå og hjælpe 
@@ -263,21 +263,20 @@ export default function Home() {
                 href="/kontakt"
                 className="inline-block rounded-full bg-orange-500 px-8 py-4 text-xl font-semibold text-white transition-all hover:bg-orange-600"
               >
-                📞 Bestil tid nu
+                Bestil tid nu
               </Link>
               <Link
                 href="/priser"
                 className="inline-block rounded-full border-2 border-white px-8 py-4 text-xl font-semibold text-white transition-all hover:bg-white hover:text-gray-800"
               >
-                💰 Se priser
+                Se priser
               </Link>
             </div>
             <p className="mt-6 text-sm text-gray-400">
-              📍 Vi holder til i Andkærhus, Vejle • ⏰ Kort ventetid • 🏥 Autoriserede psykologer
+              Vi holder til i Andkærhus, Vejle &nbsp;·&nbsp; Kort ventetid &nbsp;·&nbsp; Autoriserede psykologer
             </p>
           </div>
         </div>
-      </section>
     </main>
   );
 }

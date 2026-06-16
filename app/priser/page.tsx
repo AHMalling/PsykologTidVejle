@@ -1,11 +1,10 @@
-import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 
 export default function Priser() {
   return (
     <div className="bg-orange-50">
-      {/* Hero Section */}
+      {/* Hero */}
       <section className="bg-gradient-to-r from-orange-100 to-orange-200 py-20">
         <div className="container mx-auto px-6 text-center">
           <h1 className="mb-6 text-4xl font-bold text-gray-800 sm:text-5xl">
@@ -17,163 +16,189 @@ export default function Priser() {
         </div>
       </section>
 
-      {/* Pricing Cards Section */}
+      {/* Pricing Cards */}
       <section className="py-16">
         <div className="container mx-auto px-6">
           <div className="grid gap-8 md:grid-cols-3">
-            {/* Individual Sessions */}
+            {/* Individual */}
             <div className="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-xl transition-all hover:shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-orange-100 opacity-0 transition-opacity group-hover:opacity-100"></div>
               <div className="relative z-10">
-                <div className="mb-6 text-center">
-                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-orange-500 text-2xl text-white">
-                    👤
-                  </div>
-                  <h3 className="mb-2 text-xl font-bold text-gray-800">
+                <div className="mb-6">
+                  <h3 className="mb-1 text-xl font-bold text-gray-800">
                     Individuelle samtaler
                   </h3>
-                  <p className="text-gray-600">Personlig psykologhjælp</p>
+                  <p className="text-sm text-gray-500">Personlig psykologhjælp</p>
                 </div>
-                
-                <div className="mb-6 text-center">
-                  <div className="mb-2 text-4xl font-bold text-orange-500">1.050,-</div>
-                  <div className="text-sm text-gray-500">50 minutter</div>
+                <div className="mb-6">
+                  <div className="text-4xl font-bold text-orange-500">
+                    1.050,-
+                  </div>
+                  <div className="mt-1 text-sm text-gray-400">50 minutter</div>
                 </div>
-
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-2">
-                    <span className="text-green-500">✓</span>
-                    <span className="text-sm text-gray-700">Professionel psykologhjælp</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span className="text-green-500">✓</span>
-                    <span className="text-sm text-gray-700">Autoriseret psykolog</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span className="text-green-500">✓</span>
-                    <span className="text-sm text-gray-700">Tilpasset dit tempo</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span className="text-green-500">✓</span>
-                    <span className="text-sm text-gray-700">Fuld tavshedspligt</span>
-                  </div>
-                </div>
+                <ul className="space-y-3">
+                  {[
+                    "Autoriseret psykolog",
+                    "Professionel hjælp",
+                    "Tilpasset dit tempo",
+                    "Fuld tavshedspligt",
+                  ].map((item) => (
+                    <li key={item} className="flex items-center gap-3">
+                      <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-orange-400"></span>
+                      <span className="text-sm text-gray-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
 
-            {/* Young People */}
-            <div className="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-xl transition-all hover:shadow-2xl border-2 border-orange-300">
-              <div className="absolute -right-4 -top-4 rounded-full bg-orange-500 px-3 py-1 text-xs font-bold text-white transform rotate-12">
-                POPULÆR
+            {/* Young people — highlighted */}
+            <div className="group relative overflow-hidden rounded-2xl border-2 border-orange-400 bg-white p-8 shadow-xl transition-all hover:shadow-2xl">
+              <div className="absolute right-4 top-4 rounded-full bg-orange-500 px-3 py-1 text-xs font-bold text-white">
+                Særpris
               </div>
               <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-orange-100 opacity-0 transition-opacity group-hover:opacity-100"></div>
               <div className="relative z-10">
-                <div className="mb-6 text-center">
-                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-orange-500 text-2xl text-white">
-                    🎓
-                  </div>
-                  <h3 className="mb-2 text-xl font-bold text-gray-800">
+                <div className="mb-6">
+                  <h3 className="mb-1 text-xl font-bold text-gray-800">
                     Studerende & unge
                   </h3>
-                  <p className="text-gray-600">Under 25 år</p>
+                  <p className="text-sm text-gray-500">Under 25 år</p>
                 </div>
-                
-                <div className="mb-6 text-center">
-                  <div className="mb-1 text-4xl font-bold text-orange-500">950,-</div>
-                  <div className="text-sm text-gray-500 line-through">1.050,-</div>
-                  <div className="text-sm text-gray-500">50 minutter</div>
+                <div className="mb-6">
+                  <div className="text-4xl font-bold text-orange-500">
+                    950,-
+                  </div>
+                  <div className="mt-1 text-sm text-gray-400 line-through">
+                    1.050,-
+                  </div>
+                  <div className="text-sm text-gray-400">50 minutter</div>
                 </div>
-
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-2">
-                    <span className="text-green-500">✓</span>
-                    <span className="text-sm text-gray-700">100 kr. rabat for unge</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span className="text-green-500">✓</span>
-                    <span className="text-sm text-gray-700">Samme kvalitet som voksne</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span className="text-green-500">✓</span>
-                    <span className="text-sm text-gray-700">Forståelse for ungeudfordringer</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span className="text-green-500">✓</span>
-                    <span className="text-sm text-gray-700">Forældre kan kontakte os</span>
-                  </div>
-                </div>
+                <ul className="space-y-3">
+                  {[
+                    "100 kr. rabat for unge",
+                    "Samme høje kvalitet",
+                    "Forståelse for ungelivet",
+                    "Forældre kan kontakte os",
+                  ].map((item) => (
+                    <li key={item} className="flex items-center gap-3">
+                      <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-orange-400"></span>
+                      <span className="text-sm text-gray-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
 
-            {/* Parental Guidance */}
+            {/* Parental guidance */}
             <div className="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-xl transition-all hover:shadow-2xl">
               <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-orange-100 opacity-0 transition-opacity group-hover:opacity-100"></div>
               <div className="relative z-10">
-                <div className="mb-6 text-center">
-                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-orange-500 text-2xl text-white">
-                    👨‍👩‍👧‍👦
-                  </div>
-                  <h3 className="mb-2 text-xl font-bold text-gray-800">
+                <div className="mb-6">
+                  <h3 className="mb-1 text-xl font-bold text-gray-800">
                     Forældresparring
                   </h3>
-                  <p className="text-gray-600">Vejledning til forældre</p>
+                  <p className="text-sm text-gray-500">Vejledning til forældre</p>
                 </div>
-                
-                <div className="mb-6 text-center">
-                  <div className="mb-2 text-4xl font-bold text-orange-500">1.250,-</div>
-                  <div className="text-sm text-gray-500">75 minutter</div>
+                <div className="mb-6">
+                  <div className="text-4xl font-bold text-orange-500">
+                    1.250,-
+                  </div>
+                  <div className="mt-1 text-sm text-gray-400">75 minutter</div>
                 </div>
-
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-2">
-                    <span className="text-green-500">✓</span>
-                    <span className="text-sm text-gray-700">Længere sessioner</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span className="text-green-500">✓</span>
-                    <span className="text-sm text-gray-700">PPR-erfaring</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span className="text-green-500">✓</span>
-                    <span className="text-sm text-gray-700">Fokus på barnets trivsel</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <span className="text-green-500">✓</span>
-                    <span className="text-sm text-gray-700">Praktiske redskaber</span>
-                  </div>
-                </div>
+                <ul className="space-y-3">
+                  {[
+                    "Længere sessioner",
+                    "PPR-erfaring",
+                    "Fokus på barnets trivsel",
+                    "Praktiske redskaber",
+                  ].map((item) => (
+                    <li key={item} className="flex items-center gap-3">
+                      <span className="h-1.5 w-1.5 flex-shrink-0 rounded-full bg-orange-400"></span>
+                      <span className="text-sm text-gray-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
-            <h2 className="mb-0">Tilskud</h2>
-            <p>
-              Vi kan desværre ikke modtage klienter med henvisning fra egen
-              læge, men hvis du er medlem af Sygeforsikringen&nbsp;“danmark”,
-              kan du få tilskud til psykologsamtaler. Unge mellem 18 og 25 år
-              kan få op til 450 kr. i tilskud, andre aldersgrupper kan få op til
-              300 kr. i tilskud. Vi anbefaler, at du kontakter ”danmark” for at
-              høre om dine muligheder for tilskud. Vi sørger for en ugentlig
-              indberetning til Sygeforsikringen “danmark”. Såfremt du ønsker
-              tilskud fra ”danmark”, bedes du gøre opmærksom på det i
-              forbindelse med første samtale.
-            </p>
 
-            <h2 className="mb-0">Betaling</h2>
-            <p>
-              Betaling foregår via MobilePay eller bankoverførsel efter hver
-              samtale.
-            </p>
-            <h2 className="mb-0">Afbud</h2>
-            <p>
-              Afbud meldes i så god tid som muligt på sms eller mail, og senest
-              24 timer før aftalen.{" "}
-            </p>
-            <p>Ved udeblivelse eller for sent afbud opkræves halv takst.</p>
+      {/* Tilskud / Betaling / Afbud */}
+      <section className="bg-white py-16">
+        <div className="container mx-auto px-6">
+          <div className="mx-auto max-w-4xl">
+            <h2 className="mb-10 text-3xl font-bold text-gray-800">
+              Praktisk information
+            </h2>
+
+            <div className="grid gap-8 sm:grid-cols-3">
+              <div className="rounded-2xl bg-orange-50 p-6 ring-1 ring-orange-200">
+                <h3 className="mb-3 text-lg font-bold text-gray-800">
+                  Tilskud
+                </h3>
+                <p className="text-sm leading-relaxed text-gray-600">
+                  Vi kan desværre ikke modtage klienter med henvisning fra egen
+                  læge. Er du dog medlem af Sygeforsikringen "danmark", kan du
+                  få tilskud — op til <strong>450 kr.</strong> for unge 18–25
+                  år, og op til <strong>300 kr.</strong> for andre. Vi sørger
+                  for ugentlig indberetning. Gør os opmærksom på det ved første
+                  samtale.
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-orange-50 p-6 ring-1 ring-orange-200">
+                <h3 className="mb-3 text-lg font-bold text-gray-800">
+                  Betaling
+                </h3>
+                <p className="text-sm leading-relaxed text-gray-600">
+                  Betaling foregår via{" "}
+                  <strong>MobilePay eller bankoverførsel</strong> efter hver
+                  samtale. Det er nemt og fleksibelt.
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-orange-50 p-6 ring-1 ring-orange-200">
+                <h3 className="mb-3 text-lg font-bold text-gray-800">
+                  Afbud
+                </h3>
+                <p className="text-sm leading-relaxed text-gray-600">
+                  Afbud meldes i så god tid som muligt på sms eller mail, og{" "}
+                  <strong>senest 24 timer</strong> før aftalen. Ved udeblivelse
+                  eller for sent afbud opkræves halv takst.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-gray-800 py-16 text-center">
+        <div className="container mx-auto px-6">
+          <h2 className="mb-4 text-3xl font-bold text-white">
+            Klar til at booke en tid?
+          </h2>
+          <p className="mb-8 text-xl text-gray-300">
+            Vi har kort ventetid og ser frem til at høre fra dig
+          </p>
+          <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+            <Link
+              href="/kontakt"
+              className="inline-block rounded-full bg-orange-500 px-8 py-4 text-xl font-semibold text-white transition-all hover:bg-orange-600"
+            >
+              Book en samtale
+            </Link>
+            <Link
+              href="/vi-tilbyder"
+              className="inline-block rounded-full border-2 border-white px-8 py-4 text-xl font-semibold text-white transition-all hover:bg-white hover:text-gray-800"
+            >
+              Se vores tilbud
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
