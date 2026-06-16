@@ -4,237 +4,495 @@ import Link from "next/link";
 
 export default function viTilbyder() {
   return (
-    <div className=" bg-orange-200 ">
-      <div className="prose-base flex justify-center px-6 pt-24  sm:px-32">
-        <div className="prose max-w-lg">
-          <h1>Vi tilbyder:</h1>
-          <div className="flex flex-col gap-y-2 sm:flex-row">
-            <Link href="#samtaleterapi">
-              {" "}
-              <h4 className="m-1 inline cursor-pointer rounded-full p-2 transition-all hover:bg-black hover:text-orange-400">
-                {" "}
-                Samtaleterapi
-              </h4>
-            </Link>
-            <span className="hidden sm:flex">- </span>
-            <Link href="#til-dig-som-er-ung">
-              <h4 className="hover:bg-blacktransition-all m-1 inline cursor-pointer rounded-full p-2 transition-all hover:bg-black hover:text-orange-400">
-                {" "}
-                Til dig, som er ung
-              </h4>
-            </Link>
-            <span className="hidden sm:flex">- </span>
-            <Link href="#forældresparring">
-              <h4 className="hover:bg-blacktransition-all m-1 inline cursor-pointer rounded-full p-2 transition-all hover:bg-black hover:text-orange-400">
-                Forældresparring
-              </h4>
-            </Link>
-          </div>
+    <div className="bg-orange-50">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-orange-100 to-orange-200 py-20">
+        <div className="container mx-auto px-6 text-center">
+          <h1 className="mb-6 text-4xl font-bold text-gray-800 sm:text-5xl">
+            Vi tilbyder
+          </h1>
+          <p className="mx-auto max-w-2xl text-xl leading-relaxed text-gray-700">
+            Professionel psykologisk hjælp tilpasset dine behov og livssituation
+          </p>
 
-          <p className="pt-2">Har dit liv taget en uventet drejning?</p>
-          <p>
-            Har du over tid haft oplevelsen af, at dit liv ikke udvikler sig i
-            den retning, du kunne ønske?
-          </p>
-          <p>
-            Føler du ikke, du er i kontrol over dine tanker og psykiske
-            velbefindende?
-          </p>
-          <p>
-            Psykologtid Vejle er for dig, som ønsker at arbejde med dig selv og
-            få øje på de vinkler, som kan være svære at finde og udvikle på
-            alene.
-          </p>
-          <p>
-            Hos os vil du opleve en nysgerrighed på, hvad der har været din vej
-            i livet og et fokus på, hvad du ønsker for dig selv fremadrettet.
-          </p>
-          <p>
-            Et forløb hos Psykologtid Vejle tilpasses dig. For nogen er få
-            samtaler det rigtige, mens andre ønsker et længerevarende forløb.
-            Hos os er der ikke nogen rigtig eller forkert måde at gøre det på.
-          </p>
-        </div>
-      </div>
-      <section
-        id="samtaleterapi"
-        className="prose-base flex scroll-mt-12 justify-center px-6 pt-6 font-serif sm:px-32 "
-      >
-        <div className="prose max-w-lg ">
-          <div>
-            <h2 className="mb-0">Samtaleterapi</h2>
-            <p>
-              Når du vælger samtaleterapi hos Psykologtid Vejle, vil du blive
-              budt velkommen i et rum, hvor vi arbejder med det, som du tager
-              op. Vi gør os umage med, at du får mulighed for at bringe de emner
-              i spil, som er vigtige for dig at arbejde med og udvikle på – også
-              uden for det terapeutiske rum. Det betyder, at vi vægter det højt,
-              at du oplever et trygt rum, hvor du mødes i øjenhøjde og med
-              respekt for dig. Når du kommer hos os første gang, vil vi sammen
-              afstemme, hvad du har af håb og forventninger for dit forløb.
-            </p>
-
-            <p>
-              At livet går op og ned, kan de fleste mennesker genkende fra deres
-              eget liv. Der kan opstå svære perioder i ens tilværelse, som kan
-              være udløst af eksempelvis et brud med en partner, sorg, en
-              arbejdsrelateret hændelse, akut eller længerevarende sygdom hos
-              sig selv eller en, der står dig nær. Det kan endda i nogle
-              perioder være svært for nogen, at sætte en finger på, hvad der er
-              årsagen til, at noget ikke føles rigtigt.
-            </p>
-            <p>
-              At gå til psykolog handler om at blive klogere på sig selv og det,
-              man er rundet af. I takt med at man lærer nyt om sig selv, vil
-              mulighederne for at udvikle sig i en ønsket retning opstå. Vi
-              hjælper dig gerne på vej.
-            </p>
-            <p>
-              Et samtaleforløb kan bestå af få samtaler eller være et
-              længerevarende forløb. Nogen ønsker at mødes med et kort interval
-              mellem samtalerne, mens andre ønsker et længere interval. Vi tager
-              hensyn til dine præferencer og laver aftaler efter, hvad du har
-              brug for.
-            </p>
-            <p>
-              Vi har tavshedspligt og værner naturligvis om det, du bringer op i
-              samtalen. Intet er for stort eller for småt i en samtale hos os.
-              Hvis det er vigtigt for dig, så er det vigtigt for os i terapien.
-            </p>
-            <p>
-              Vil du gerne vide mere om, hvem vi er og hvad der kendetegner os,
-              kan du læse mere i afsnittene <Link href="/kontakt">om os</Link>.
-            </p>
-            <p>
-              Psykologtid Vejle har tid til dig. Du er velkommen til at kontakte
-              os uforpligtende pr. mail eller telefon, hvis du har spørgsmål til
-              et samtaleforløb hos os.
-            </p>
-            <p>
-              Du kan kontakte os <Link href="/kontakt">her</Link>.
-            </p>
+          {/* Quick Navigation */}
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
+            <Link
+              href="#samtaleterapi"
+              className="inline-block rounded-full bg-white px-6 py-3 font-semibold text-gray-800 shadow-md transition-all hover:bg-orange-500 hover:text-white"
+            >
+              🗣️ Samtaleterapi
+            </Link>
+            <Link
+              href="#til-dig-som-er-ung"
+              className="inline-block rounded-full bg-white px-6 py-3 font-semibold text-gray-800 shadow-md transition-all hover:bg-orange-500 hover:text-white"
+            >
+              👥 Til unge
+            </Link>
+            <Link
+              href="#forældresparring"
+              className="inline-block rounded-full bg-white px-6 py-3 font-semibold text-gray-800 shadow-md transition-all hover:bg-orange-500 hover:text-white"
+            >
+              👨‍👩‍👧‍👦 Forældresparring
+            </Link>
           </div>
         </div>
       </section>
+
+      {/* Introduction Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-6">
+          <div className="mx-auto max-w-4xl">
+            <div className="rounded-lg bg-white p-8 shadow-lg">
+              <h2 className="mb-6 text-2xl font-bold text-gray-800">
+                Er du klar til forandring?
+              </h2>
+              <div className="grid gap-6 sm:grid-cols-2">
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <span className="text-2xl">🔄</span>
+                    <p className="text-gray-700">
+                      Har dit liv taget en uventet drejning?
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-2xl">🎯</span>
+                    <p className="text-gray-700">
+                      Udvikler dit liv sig ikke i den retning, du ønsker?
+                    </p>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <span className="text-2xl">🧠</span>
+                    <p className="text-gray-700">
+                      Føler du ikke, du er i kontrol over dine tanker?
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-2xl">💪</span>
+                    <p className="text-gray-700">
+                      Ønsker du at arbejde med dig selv og udvikle dig?
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 rounded-lg bg-orange-50 p-6">
+                <p className="text-lg leading-relaxed text-gray-700">
+                  <strong>Psykologtid Vejle</strong> er for dig, som ønsker at
+                  arbejde med dig selv og få øje på de vinkler, som kan være
+                  svære at finde og udvikle på alene. Hos os oplever du
+                  nysgerrighed på din livshistorie og fokus på, hvad du ønsker
+                  for dig selv fremadrettet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Samtaleterapi Section */}
+      <section id="samtaleterapi" className="scroll-mt-12 bg-white py-16">
+        <div className="container mx-auto px-6">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
+            <div className="space-y-6">
+              <div>
+                <h2 className="mb-4 text-3xl font-bold text-gray-800">
+                  🗣️ Samtaleterapi
+                </h2>
+                <p className="text-lg text-orange-600">
+                  Professionel terapeutisk støtte i et trygt rum
+                </p>
+              </div>
+
+              <div className="rounded-lg bg-orange-50 p-6">
+                <h3 className="mb-3 text-xl font-semibold text-gray-800">
+                  Hvad kan du forvente?
+                </h3>
+                <p className="leading-relaxed text-gray-700">
+                  Når du vælger samtaleterapi hos os, bliver du budt velkommen i
+                  et rum, hvor vi arbejder med det, du tager op. Vi sørger for,
+                  at du får mulighed for at bringe de emner i spil, som er
+                  vigtige for dig.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="text-xl font-semibold text-gray-800">
+                  Hvornår kan samtaleterapi være relevant?
+                </h3>
+                <div className="grid gap-3 sm:grid-cols-2">
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500">💔</span>
+                    <span className="text-gray-700">Brud med partner</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500">😢</span>
+                    <span className="text-gray-700">Sorg og tab</span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500">💼</span>
+                    <span className="text-gray-700">
+                      Arbejdsrelaterede problemer
+                    </span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500">🏥</span>
+                    <span className="text-gray-700">
+                      Sygdom (dig selv eller pårørende)
+                    </span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500">❓</span>
+                    <span className="text-gray-700">
+                      Når noget ikke føles rigtigt
+                    </span>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500">🔄</span>
+                    <span className="text-gray-700">
+                      Ønsket om personlig udvikling
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div className="rounded-lg bg-gray-50 p-6">
+                <h3 className="mb-4 text-xl font-semibold text-gray-800">
+                  Sådan foregår det
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex items-start space-x-3">
+                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-orange-500 text-sm font-bold text-white">
+                      1
+                    </span>
+                    <p className="text-gray-700">
+                      Ved første samtale afstemmer vi dine håb og forventninger
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-orange-500 text-sm font-bold text-white">
+                      2
+                    </span>
+                    <p className="text-gray-700">
+                      Vi arbejder i dit tempo med de emner, du bringer op
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="flex h-6 w-6 items-center justify-center rounded-full bg-orange-500 text-sm font-bold text-white">
+                      3
+                    </span>
+                    <p className="text-gray-700">
+                      Sammen finder vi nye vinkler og udvikling
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-lg bg-orange-500 p-6 text-white">
+                <h3 className="mb-4 text-xl font-semibold">
+                  ✨ Vores løfte til dig
+                </h3>
+                <ul className="space-y-2">
+                  <li className="flex items-start space-x-2">
+                    <span>🔒</span>
+                    <span>Fuld tavshedspligt</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <span>🤝</span>
+                    <span>Møde i øjenhøjde med respekt</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <span>⏰</span>
+                    <span>Fleksible intervaller mellem samtaler</span>
+                  </li>
+                  <li className="flex items-start space-x-2">
+                    <span>🎯</span>
+                    <span>Tilpasset til lige netop dig</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="text-center">
+                <Link
+                  href="/kontakt"
+                  className="inline-block rounded-full bg-orange-500 px-8 py-3 font-semibold text-white transition-all hover:bg-orange-600"
+                >
+                  Book en samtale
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Til unge Section */}
       <section
         id="til-dig-som-er-ung"
-        className="prose-base flex scroll-mt-12 justify-center px-6 pt-6 font-serif sm:px-32  "
+        className="scroll-mt-12 bg-orange-50 py-16"
       >
-        <div className="prose max-w-lg">
-          <h3 className="mb-0 ">Til dig, som er ung (+18)</h3>
-          <p>
-            Måske oplever du også, at der er mange krav til dig, som er ung?
-            Krav om at gøre det ”rigtige” med sit liv og vide, hvad man vil. Hos
-            Psykologtid Vejle har vi talt med mange unge, som kan synes, det er
-            svært at navigere i, hvem man selv er samtidig med, at man skal leve
-            op til forventninger om uddannelse.
-          </p>
-          <p>
-            Det kan også være, du har haft en svær opvækst og ikke kan finde ud
-            af, hvad det siger om dig, og hvem du er? Eller måske har du oplevet
-            noget grænseoverskridende, som har sat dybe spor?
-          </p>
-          <p>
-            Man kan ikke ændre på sin fortid, men vi kan have fokus på, hvad du
-            ønsker for dig selv i fremtiden.
-          </p>
-          <p>
-            Vi oplever ind imellem, at spørgsmål om selvværd og selvtillid
-            fylder ekstra meget i den del af livet, hvor man er ved at finde sig
-            selv. Særligt hvis ens vej gennem livet ikke har været nem.
-          </p>
-          <p>
-            Hos Psykologtid Vejle vil vi gøre, hvad vi kan, for at hjælpe dig på
-            vej.
-          </p>
-          <h5>Særligt i forhold til unge</h5>
-          <p>
-            Psykologtid Vejle tilbyder terapeutiske samtaler til unge fra 18 år.
-          </p>
-          <p>
-            Fortæller du os noget, som kan give anledning til bekymring for din
-            sikkerhed, fx selvmordstanker, har vi pligt til at sørge for, du
-            bliver hjulpet godt videre.
-          </p>
-          <p>
-            Har du eller dine forældre spørgsmål til dette, må I altid gerne
-            kontakte os. I finder vores kontaktoplysninger{" "}
-            <a href="/kontakt">her</a>.
-          </p>
+        <div className="container mx-auto px-6">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
+            <div className="relative lg:order-2">
+              <Image
+                src="/assets/pexels-maryia-plashchynskaya-3393793.jpg"
+                alt="Ung person i reflektion"
+                className="h-96 w-full rounded-lg object-cover shadow-lg"
+                width={600}
+                height={400}
+              />
+              <div className="absolute inset-0 rounded-lg bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
+
+            <div className="space-y-6 lg:order-1">
+              <div>
+                <h2 className="mb-4 text-3xl font-bold text-gray-800">
+                  👥 Til dig, som er ung (18+)
+                </h2>
+                <p className="text-lg text-orange-600">
+                  Særlige priser og fokus for unge mennesker
+                </p>
+              </div>
+
+              <div className="rounded-lg bg-white p-6 shadow-lg">
+                <h3 className="mb-4 text-xl font-semibold text-gray-800">
+                  Genkender du dette?
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500">🎯</span>
+                    <p className="text-gray-700">
+                      Mange krav om at gøre det "rigtige" med sit liv
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500">🤔</span>
+                    <p className="text-gray-700">
+                      Svært at navigere i, hvem man selv er
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500">📚</span>
+                    <p className="text-gray-700">
+                      Forventninger om uddannelse og fremtid
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500">💭</span>
+                    <p className="text-gray-700">
+                      Spørgsmål om selvværd og selvtillid
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="rounded-lg bg-gray-50 p-6">
+                <h3 className="mb-4 text-xl font-semibold text-gray-800">
+                  Vi forstår udfordringerne
+                </h3>
+                <p className="mb-4 leading-relaxed text-gray-700">
+                  Hos Psykologtid Vejle har vi talt med mange unge, som synes
+                  det er svært at finde ud af, hvem de er. Det kan være ekstra
+                  udfordrende, hvis du har haft en svær opvækst eller oplevet
+                  grænseoverskridende situationer.
+                </p>
+                <blockquote className="border-l-4 border-orange-400 pl-4 italic text-gray-600">
+                  "Man kan ikke ændre på sin fortid, men vi kan have fokus på,
+                  hvad du ønsker for dig selv i fremtiden."
+                </blockquote>
+              </div>
+
+              <div className="rounded-lg bg-orange-500 p-6 text-white">
+                <h3 className="mb-4 text-xl font-semibold">Særligt for unge</h3>
+                <div className="space-y-3">
+                  <div className="flex items-start space-x-3">
+                    <span>💰</span>
+                    <div>
+                      <p className="font-semibold">Særpris for studerende</p>
+                      <p className="text-sm text-orange-100">
+                        950 kr. for unge under 25 år (normalpris 1050 kr.)
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span>🛡️</span>
+                    <div>
+                      <p className="font-semibold">Sikkerhed først</p>
+                      <p className="text-sm text-orange-100">
+                        Vi har pligt til at sørge for din sikkerhed
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span>👨‍👩‍👧‍👦</span>
+                    <div>
+                      <p className="font-semibold">Forældre velkommen</p>
+                      <p className="text-sm text-orange-100">
+                        Forældre kan altid kontakte os med spørgsmål
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <Link
+                  href="/kontakt"
+                  className="inline-block rounded-full bg-orange-500 px-8 py-3 font-semibold text-white transition-all hover:bg-orange-600"
+                >
+                  Kontakt os som ung
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section
-        id="forældresparring"
-        className="prose-base flex scroll-mt-12 justify-center px-6 pt-6 font-serif sm:px-32 "
-      >
-        <div className="prose max-w-lg">
-          <h3 className="mb-0">Forældresparring</h3>
-          <p>
-            Alle forældre vil fra tid til anden stå i situationer med deres
-            børn, som er svære at håndtere. Det er en helt almindelig del af
-            forældreskabet.
-          </p>
-          <p>
-            Forældresparring er tiltænkt jer, som oplever længerevarende
-            perioder, hvor det ikke giver sig selv, hvad det næste bedste skridt
-            er.
-          </p>
-          <p>
-            Vi har erfaring med at møde forældre, som føler sig fastlåste i
-            deres forældreskab og ønsker at få nogle nye greb i mødet med deres
-            børn.
-          </p>
 
-          <p>
-            Vi har også ofte talt med forældre, som over tid har været vidner
-            til en nedadgående trivsel hos deres barn. Det skaber hurtigt en
-            følelse af magtesløshed for forældrene til barnet.
-          </p>
+      {/* Forældresparring Section */}
+      <section id="forældresparring" className="scroll-mt-12 bg-white py-16">
+        <div className="container mx-auto px-6">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
+            <div className="relative">
+              <Image
+                src="/assets/pexels-kindel-media-8550841.jpg"
+                alt="Familie i samtale"
+                className="h-96 w-full rounded-lg object-cover shadow-lg"
+                width={600}
+                height={400}
+              />
+              <div className="absolute inset-0 rounded-lg bg-gradient-to-t from-black/20 to-transparent"></div>
+            </div>
 
-          <p>
-            Det vil for mange være en naturlig handling at inddrage barnet og
-            tale med barnet om, hvad det kan gøre anderledes, og hvordan man kan
-            hjælpe det på vej.
-          </p>
+            <div className="space-y-6">
+              <div>
+                <h2 className="mb-4 text-3xl font-bold text-gray-800">
+                  👨‍👩‍👧‍👦 Forældresparring
+                </h2>
+                <p className="text-lg text-orange-600">
+                  Professionel vejledning til forældre med fokus på barnets
+                  trivsel
+                </p>
+              </div>
 
-          <p>
-            Hos Psykologtid Vejle har vi et andet fokus. Vi har erfaret, at en
-            ønsket udvikling kan ske, når voksne bliver bevidste om egne
-            handlinger og foretager nødvendige justeringer i hverdagen.
-          </p>
+              <div className="rounded-lg bg-orange-50 p-6">
+                <h3 className="mb-4 text-xl font-semibold text-gray-800">
+                  Hvornår kan forældresparring være relevant?
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500">🤔</span>
+                    <p className="text-gray-700">
+                      Når du føler dig fastlåst i forældreskabet
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500">📉</span>
+                    <p className="text-gray-700">
+                      Nedadgående trivsel hos dit barn
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500">🧩</span>
+                    <p className="text-gray-700">
+                      Dit barn har en diagnose (autisme, ADHD, ADD, angst)
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span className="text-orange-500">❓</span>
+                    <p className="text-gray-700">Usikkerhed om næste skridt</p>
+                  </div>
+                </div>
+              </div>
 
-          <p>
-            Hos Psykologtid Vejle har I som forældre mulighed for at booke tid
-            til en forældresparring, hvor vi kan have et fælles fokus på, hvad I
-            ønsker for jeres barn og familie som helhed.
-          </p>
+              <div className="rounded-lg bg-gray-50 p-6">
+                <h3 className="mb-4 text-xl font-semibold text-gray-800">
+                  Vores tilgang
+                </h3>
+                <p className="mb-4 leading-relaxed text-gray-700">
+                  Vi har et andet fokus end traditionel familierådgivning. Vi
+                  har erfaret, at ønsket udvikling ofte sker, når voksne bliver
+                  bevidste om egne handlinger og foretager nødvendige
+                  justeringer i hverdagen.
+                </p>
+                <blockquote className="border-l-4 border-orange-400 pl-4 italic text-gray-600">
+                  "Det er ikke børnene, der i udgangspunktet skal ændre på
+                  noget, men i stedet de voksne omkring dem, der skal arbejde
+                  med rammerne."
+                </blockquote>
+              </div>
 
-          <p>
-            <span className="block font-bold text-black ">Vores erfaring</span>
-            Vi har begge to flere års erfaring med rådgivning af denne karakter,
-            da vi har arbejdet som psykologer på flere PPR-kontorer (Pædagogisk
-            Psykologisk Rådgivning), hvor vi har været tilknyttet både skoler og
-            dagtilbud.
-          </p>
+              <div className="rounded-lg bg-orange-500 p-6 text-white">
+                <h3 className="mb-4 text-xl font-semibold">Vores erfaring</h3>
+                <div className="space-y-3">
+                  <div className="flex items-start space-x-3">
+                    <span>🏫</span>
+                    <div>
+                      <p className="font-semibold">PPR-erfaring</p>
+                      <p className="text-sm text-orange-100">
+                        Flere års erfaring fra Pædagogisk Psykologisk Rådgivning
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span>👥</span>
+                    <div>
+                      <p className="font-semibold">Tværfagligt samarbejde</p>
+                      <p className="text-sm text-orange-100">
+                        Erfaring med skoler, dagtilbud og familier
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <span>🎯</span>
+                    <div>
+                      <p className="font-semibold">Fokus på trivsel</p>
+                      <p className="text-sm text-orange-100">
+                        Barnets udvikling og handlemuligheder i centrum
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-          <p>
-            Børns udvikling og trivsel er det vigtigste omdrejningspunkt, når du
-            arbejder i PPR og hele tiden med en bevidsthed om, at det ikke er
-            børnene, der i udgangspunktet skal ændre på noget, men i stedet de
-            voksne omkring dem, der skal arbejde med rammerne omkring barnet.
-          </p>
+              <div className="text-center">
+                <Link
+                  href="/kontakt"
+                  className="inline-block rounded-full bg-orange-500 px-8 py-3 font-semibold text-white transition-all hover:bg-orange-600"
+                >
+                  Book forældresparring
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <p>
-            Vi har stor erfaring med at sidde over for både børn, deres forældre
-            og de nære voksne fra deres skole- eller dagtilbudsmiljø og byde ind
-            med en nysgerrighed omkring barnets handlemuligheder.
+      {/* Call to Action Section */}
+      <section className="bg-gray-800 py-16 text-center">
+        <div className="container mx-auto px-6">
+          <h2 className="mb-4 text-3xl font-bold text-white">
+            Vil du vide mere om vores tilbud?
+          </h2>
+          <p className="mb-8 text-xl text-gray-300">
+            Vi har kort ventetid og er klar til at hjælpe dig videre
           </p>
-
-          <p>
-            Det betyder, at forældre, som bekymrer sig omkring deres barns
-            trivsel eller udvikling altid vil være velkomne til at rette
-            henvendelse, så vi sammen kan vurdere, om vi kan hjælpe jer på vej.
-          </p>
+          <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+            <Link
+              href="/kontakt"
+              className="inline-block rounded-full bg-orange-500 px-8 py-3 font-semibold text-white transition-all hover:bg-orange-600"
+            >
+              Kontakt os
+            </Link>
+            <Link
+              href="/priser"
+              className="inline-block rounded-full border-2 border-white px-8 py-3 font-semibold text-white transition-all hover:bg-white hover:text-gray-800"
+            >
+              Se priser
+            </Link>
+          </div>
         </div>
       </section>
     </div>

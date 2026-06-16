@@ -1,191 +1,281 @@
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="flex flex-col">
-      <div className="mt-20 max-h-[600px] w-screen overflow-hidden bg-gray-400 sm:mt-0">
+      {/* Hero Section */}
+      <section className="relative mt-20 h-[600px] w-screen overflow-hidden bg-gray-400 sm:mt-0">
         <Image
-          src={require("@/assets/Gruppefoto-logo.jpg")}
-          placeholder="blur"
-          alt="Gruppefoto"
-          className="z-10 w-full opacity-70 "
+          src="/assets/Gruppefoto-logo.jpg"
+          alt="Gruppefoto af Psykologtid Vejle team"
+          className="z-10 h-full w-full object-cover opacity-70"
           width={1000}
           height={600}
         />
-      </div>
-      <div className="z-20 bg-orange-100 px-3 pt-6 sm:absolute sm:mt-72 sm:w-1/2 sm:bg-inherit sm:px-28 sm:pt-0 ">
-        <div className="black z-20 rounded-md bg-orange-200 px-5 pb-5 pt-3 text-lg sm:max-w-96 ">
-          <p>
-            Søger du en{" "}
-            <span className="font-bold text-black  ">
-              autoriseret psykolog{" "}
-            </span>{" "}
-            med <span className="font-bold text-black  ">kort ventetid </span> i
-            Vejle?{" "}
-          </p>{" "}
-          Book tid til en samtale med psykolog Kamilla Nansen eller psykolog
-          Thea Dahl Vemmelund og få en tid snarest.{" "}
-          <p>
-            <button className="text-medium mt-1 rounded-full bg-black  px-5 py-2 font-mono font-semibold text-white/80  transition-all hover:scale-110 hover:text-orange-400">
-              {">"} Bestil tid nu
-            </button>
-          </p>
-        </div>
-      </div>
-      <div className="w-screen bg-orange-100 py-10">
-        <div className=" flex justify-center px-6 py-4 sm:px-28">
-          <div className=" rounded-md py-3 font-serif sm:w-1/2 sm:px-4">
-            <h2 className="pb-2 text-lg font-bold ">
-              Hvad kan man tale med en psykolog om?{" "}
-            </h2>
-            <p className="pb-2 ">
-              Det korte svar er alt. Intet er for stort eller for småt. I
-              samtaleterapi hos os, har vi fokus på det, der er vigtigt for dig.
+        <div className="absolute inset-0 bg-black/30"></div>
+        
+        {/* Hero Content */}
+        <div className="absolute inset-0 flex items-center justify-center px-4 sm:justify-start sm:px-28">
+          <div className="z-20 max-w-2xl rounded-lg bg-white/95 p-8 shadow-xl backdrop-blur-sm">
+            <h1 className="mb-4 text-2xl font-bold text-gray-800 sm:text-3xl">
+              Autoriseret psykolog med kort ventetid i Vejle
+            </h1>
+            <p className="mb-6 text-lg leading-relaxed text-gray-700">
+              Book tid til en samtale med <strong>psykolog Kamilla Nansen</strong> eller{" "}
+              <strong>psykolog Thea Dahl Vemmelund</strong> og få en tid snarest.
             </p>
-            <p className="pb-2">
-              Hvem du er, og hvad der har formet dig gennem livet har betydning
-              for, hvad du vælger at gøre her og nu. En samtale handler ofte om,
-              hvordan man kan bryde vaner og skabe forandring. Din identitet og
-              hvem du gerne vil være er for nogen det vigtige at arbejde med i
-              terapi.
-            </p>
-            <p>
-              Du skal ikke passe ind i en kategori for at tale med en psykolog.
-              Vi oplever dog alligevel, at det for mange er rart at mærke, de
-              ikke er alene med det, de oplever. I kasserne nedenfor, samt under
-              fanen genkender du?, kan du læse mere om nogle af de emner, vi
-              ofte møder..
-            </p>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <Link
+                href="/kontakt"
+                className="inline-block rounded-full bg-black px-6 py-3 text-center font-semibold text-white transition-all hover:scale-105 hover:bg-orange-600"
+              >
+                📞 Bestil tid nu
+              </Link>
+              <Link
+                href="/om-os"
+                className="inline-block rounded-full border-2 border-black px-6 py-3 text-center font-semibold text-black transition-all hover:bg-black hover:text-white"
+              >
+                Læs om os
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="flex justify-center bg-gray-700 text-white/90 sm:px-52 sm:py-20">
-        <div className="grid font-serif  sm:grid-cols-2 ">
-          <p className="border-b-4 border-orange-200 p-7 pb-5 sm:border-r-4">
-            Har du <span className="text-orange-400">angst</span>, kan det have
-            store konsekvenser for, hvordan du lever dit liv. Du kan blive
-            begrænset i at leve, som du gerne vil, og det kan føles som en
-            fuldstændig umulig opgave at tage kontrollen tilbage, fordi alene
-            tanken kan få et angstanfald til at skylle ind over dig.
-          </p>
-          <p className="border-b-4 border-orange-200 p-7">
-            Ordet <span className="text-orange-400"> stress </span> bruges ofte
-            til at beskrive almindelig travlhed. Er du én af dem som faktisk har
-            oplevet hvad rigtig stress er, så er du ikke i tvivl. Måske har du
-            symptomer, som vi kan arbejde forebyggende med eller måske er du
-            allerede sygemeldt. Stress er alvorligt, og det kan være svært at
-            skrue ned for tempoet, selvom du har en god idé om, hvad du skal
-            skære væk.
-          </p>
-          <p className=" border-b-4 border-orange-200 p-7 sm:border-b-0 sm:border-r-4">
-            Lever du et liv med{" "}
-            <span className="text-orange-400"> depression</span>, der kommer og
-            går i perioder? Oplever du for første gang en overvældende følelse
-            af tristhed og at meningen med livet er svær at finde? Livet vil
-            byde på dyk, men du har brug for også at mærke, at der findes en vej
-            ud af mørket igen. Selvom det er svært at række ud, når du har det
-            sværest, kan det være vendepunktet. Vi er klar til at tage varmt
-            imod dig.
-          </p>
-          <p className="p-7">
-            1 At få stillet en diagnose er for mange en lettelse, fordi det
-            giver svar på spørgsmål, der har fyldt meget. For nogen medfører en
-            diagnose dog også mange nye spørgsmål. Hvem er jeg med min diagnose?
-            Vil det være smart at ændre på noget i min hverdag eller skal jeg
-            bare leve som før? Har jeg fået det bedre af at få stillet min
-            diagnose eller ej? Uanset om du har autisme, ADHD, ADD, angst eller
-            andet, så kan det føles som om, man skal lære sig selv at kende på
-            en ny måde. Nogen er glade for deres diagnose og andre er ikke
-          </p>
+      </section>
+      {/* Introduction Section */}
+      <section className="bg-orange-50 py-16">
+        <div className="container mx-auto px-6 sm:px-12">
+          <div className="mx-auto max-w-4xl text-center">
+            <h2 className="mb-6 text-3xl font-bold text-gray-800 sm:text-4xl">
+              Hvad kan man tale med en psykolog om?
+            </h2>
+            <div className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-700">
+              <p className="mb-4">
+                <strong>Det korte svar er alt.</strong> Intet er for stort eller for småt. 
+                I samtaleterapi hos os har vi fokus på det, der er vigtigt for dig.
+              </p>
+              <p className="mb-4">
+                Hvem du er, og hvad der har formet dig gennem livet, har betydning for 
+                hvad du vælger at gøre her og nu. En samtale handler ofte om, hvordan 
+                man kan bryde vaner og skabe forandring.
+              </p>
+              <p className="mb-6">
+                Du skal ikke passe ind i en kategori for at tale med en psykolog. 
+                Vi oplever dog alligevel, at det for mange er rart at mærke, de ikke 
+                er alene med det, de oplever.
+              </p>
+              <Link 
+                href="/genkender-du"
+                className="inline-block rounded-full bg-orange-400 px-6 py-3 font-semibold text-white transition-all hover:bg-orange-500"
+              >
+                Genkender du disse udfordringer? →
+              </Link>
+            </div>
+          </div>
         </div>
-      </div>
-      <section className="flex flex-col justify-center bg-orange-100 px-7 font-sans sm:px-40   ">
-        <div className="mt-10 flex flex-col gap-10  py-10 sm:mt-32 ">
-          <p className="font-serif italic">
-            Vi træder oftest på de stier, som vi kender allerbedst, så det at
-            turde gå en ny vej, kan være svært, og for mange kan det slet ikke
-            lade sig gøre at få øje på nye stier. Dem kan vi sammen finde. –
-            Kamilla
-          </p>
-          <p className="max-w-3xl font-serif italic">
-            Det kræver ofte tilløb og mod at starte i terapi, og jeg vil tage
-            omsorgsfuldt imod dig. – Thea{" "}
-          </p>
-        </div>
-        <div className="my-10 grid grid-cols-2 justify-center ">
-          <div className="h-16 border-r-2 border-black/65"></div>
-        </div>
-        <div className="relative flex  flex-col items-center justify-center py-20 sm:flex-row">
-          <h2 className="absolute top-32 z-20 flex rounded-md bg-orange-400/90 px-4 text-lg font-bold sm:hidden">
-            Til dig, som er ung
+      </section>
+      {/* Services Overview Section */}
+      <section className="bg-gray-800 py-16 text-white">
+        <div className="container mx-auto px-6 sm:px-12">
+          <h2 className="mb-12 text-center text-3xl font-bold">
+            Områder vi ofte arbejder med
           </h2>
-          <Image
-            src={require("@/assets/pexels-maryia-plashchynskaya-3393793.jpg")}
-            alt="Gruppefoto"
-            className="sm:max-h-92 z-10 max-h-52 object-cover sm:max-w-52"
-            width={1000}
-            height={600}
-          />
-          <div className="pt-2 sm:ml-10  ">
-            <h2 className="prose prose-base hidden pt-2 text-lg font-bold text-black sm:flex ">
-              Til dig, som er ung
-            </h2>
-            <p className="prose prose-base pt-2 text-black">
-              Som ung kan du opleve, at der er mange krav og forventninger til
-              dig, både fra omgivelserne og fra dig selv. Det kan handle om alt
-              fra skolearbejde, venner, kærester og forældre, til ensomhed,
-              angst, konflikter, vrede og tristhed. Det kan være svært at
-              navigere i på egen hånd, og det kan derfor være rart at tale med
-              nogen om det, du står i. Mange oplever det som en god hjælp at
-              snakke med deres venner eller en tryg voksen i deres omgangskreds,
-              mens andre også har gavn af at tale med en psykolog i en periode.
-              Vi tilbyder samtaler til unge, læs mere her.
-            </p>
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
+            <div className="rounded-lg bg-gray-700/50 p-6 transition-all hover:bg-gray-700">
+              <h3 className="mb-4 text-xl font-semibold text-orange-400">
+                🧠 Angst
+              </h3>
+              <p className="leading-relaxed text-gray-300">
+                Har du <span className="text-orange-400 font-semibold">angst</span>, kan det have 
+                store konsekvenser for, hvordan du lever dit liv. Du kan blive begrænset i at 
+                leve, som du gerne vil, og det kan føles som en fuldstændig umulig opgave at 
+                tage kontrollen tilbage.
+              </p>
+            </div>
+            
+            <div className="rounded-lg bg-gray-700/50 p-6 transition-all hover:bg-gray-700">
+              <h3 className="mb-4 text-xl font-semibold text-orange-400">
+                ⚡ Stress
+              </h3>
+              <p className="leading-relaxed text-gray-300">
+                Ordet <span className="text-orange-400 font-semibold">stress</span> bruges ofte til at 
+                beskrive almindelig travlhed. Er du én af dem som faktisk har oplevet hvad rigtig 
+                stress er, så er du ikke i tvivl. Stress er alvorligt, og det kan være svært at 
+                skrue ned for tempoet.
+              </p>
+            </div>
+            
+            <div className="rounded-lg bg-gray-700/50 p-6 transition-all hover:bg-gray-700">
+              <h3 className="mb-4 text-xl font-semibold text-orange-400">
+                🌧️ Depression
+              </h3>
+              <p className="leading-relaxed text-gray-300">
+                Lever du et liv med <span className="text-orange-400 font-semibold">depression</span>, 
+                der kommer og går i perioder? Livet vil byde på dyk, men du har brug for også at 
+                mærke, at der findes en vej ud af mørket igen. Vi er klar til at tage varmt imod dig.
+              </p>
+            </div>
+            
+            <div className="rounded-lg bg-gray-700/50 p-6 transition-all hover:bg-gray-700">
+              <h3 className="mb-4 text-xl font-semibold text-orange-400">
+                🏷️ Liv med diagnose
+              </h3>
+              <p className="leading-relaxed text-gray-300">
+                At få stillet en diagnose er for mange en lettelse, men kan også medføre nye 
+                spørgsmål. Hvem er jeg med min diagnose? Uanset om du har autisme, ADHD, ADD 
+                eller andet, kan det føles som om, man skal lære sig selv at kende på en ny måde.
+              </p>
+            </div>
+          </div>
+          
+          <div className="mt-12 text-center">
+            <Link 
+              href="/genkender-du"
+              className="inline-block rounded-full bg-orange-500 px-8 py-3 font-semibold text-white transition-all hover:bg-orange-600"
+            >
+              Læs mere om alle områder →
+            </Link>
           </div>
         </div>
-        <div className=" flex-row items-center justify-center py-24 sm:flex  ">
-          <div className="relative flex justify-center sm:hidden">
-            <h2 className="absolute top-10 z-20 flex rounded-md bg-orange-400/90 px-4 text-lg font-bold  sm:hidden">
-              Forældresparring
-            </h2>
-            <Image
-              src={require("@/assets/pexels-kindel-media-8550841.jpg")}
-              alt="Gruppefoto"
-              className="sm:max-h-92 z-10 max-h-52 object-cover sm:max-w-40"
-              width={1000}
-              height={600}
-            />
-          </div>
-          <div className="">
-            <h2 className=" hidden text-lg font-bold sm:flex">
-              {" "}
-              Forældresparring
-            </h2>
-            <p className="prose prose-base pt-2 text-black sm:mr-10">
-              Vi tilbyder sparring til forældre, der ønsker at forstå og hjælpe
-              deres børn til bedre trivsel og balance i en måske hektisk
-              hverdag. Har dit barn en diagnose, fx autisme, ADHD, ADD eller
-              angst, kan det påvirke hele jeres familie, og det kan være
-              hjælpsomt at snakke med nogen om det, samt få nye perspektiver
-              eller konkrete redskaber. Vi har flere års erfaring med dette fra
-              PPR. Hvis du vil læse mere, kan du trykke her.
-            </p>
-          </div>
-          <div className="relative hidden justify-center sm:flex ">
-            <Image
-              src={require("@/assets/pexels-kindel-media-8550841.jpg")}
-              alt="Gruppefoto"
-              className="sm:max-h-92 z-10 max-h-52 object-cover sm:max-w-52"
-              width={1000}
-              height={600}
-            />
+      </section>
+      {/* Testimonials Section */}
+      <section className="bg-orange-50 py-16">
+        <div className="container mx-auto px-6 sm:px-12">
+          <h2 className="mb-12 text-center text-3xl font-bold text-gray-800">
+            Vores tilgang
+          </h2>
+          <div className="mx-auto max-w-4xl">
+            <div className="grid gap-8 sm:grid-cols-2">
+              <div className="rounded-lg bg-white p-8 shadow-lg">
+                <blockquote className="text-lg italic leading-relaxed text-gray-700">
+                  "Vi træder oftest på de stier, som vi kender allerbedst, så det at 
+                  turde gå en ny vej kan være svært. For mange kan det slet ikke lade 
+                  sig gøre at få øje på nye stier. Dem kan vi sammen finde."
+                </blockquote>
+                <footer className="mt-4 text-right">
+                  <cite className="font-semibold text-orange-600">– Kamilla</cite>
+                </footer>
+              </div>
+              
+              <div className="rounded-lg bg-white p-8 shadow-lg">
+                <blockquote className="text-lg italic leading-relaxed text-gray-700">
+                  "Det kræver ofte tilløb og mod at starte i terapi, og jeg vil 
+                  tage omsorgsfuldt imod dig."
+                </blockquote>
+                <footer className="mt-4 text-right">
+                  <cite className="font-semibold text-orange-600">– Thea</cite>
+                </footer>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="flex justify-center pb-10">
-          <button className="mb-24 mt-1 rounded-full bg-black px-8 py-4 font-mono text-xl font-semibold text-white/80 transition-all hover:scale-110 hover:text-orange-400">
-            {">"} Bestil tid nu
-          </button>
+      </section>
+        {/* Services for Young People */}
+        <div className="bg-white py-16">
+          <div className="container mx-auto px-6">
+            <div className="grid items-center gap-8 lg:grid-cols-2">
+              <div className="relative">
+                <Image
+                  src="/assets/pexels-maryia-plashchynskaya-3393793.jpg"
+                  alt="Ung person i samtale"
+                  className="h-80 w-full rounded-lg object-cover shadow-lg"
+                  width={600}
+                  height={400}
+                />
+                <div className="absolute inset-0 rounded-lg bg-gradient-to-t from-black/20 to-transparent"></div>
+              </div>
+              
+              <div className="space-y-6">
+                <h2 className="text-3xl font-bold text-gray-800">
+                  👥 Til dig, som er ung
+                </h2>
+                <p className="text-lg leading-relaxed text-gray-700">
+                  Som ung kan du opleve, at der er mange krav og forventninger til dig, 
+                  både fra omgivelserne og fra dig selv. Det kan handle om alt fra 
+                  skolearbejde, venner, kærester og forældre, til ensomhed, angst, 
+                  konflikter, vrede og tristhed.
+                </p>
+                <p className="text-gray-600">
+                  Det kan være svært at navigere i på egen hånd, og det kan derfor være 
+                  rart at tale med nogen om det, du står i. Vi tilbyder samtaler til unge 
+                  fra 18 år med særlige priser for studerende.
+                </p>
+                <Link 
+                  href="/vi-tilbyder#til-dig-som-er-ung"
+                  className="inline-block rounded-full bg-orange-500 px-6 py-3 font-semibold text-white transition-all hover:bg-orange-600"
+                >
+                  Læs mere om samtaler for unge →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Parental Support */}
+        <div className="bg-orange-50 py-16">
+          <div className="container mx-auto px-6">
+            <div className="grid items-center gap-8 lg:grid-cols-2">
+              <div className="space-y-6 lg:order-2">
+                <h2 className="text-3xl font-bold text-gray-800">
+                  👨‍👩‍👧‍👦 Forældresparring
+                </h2>
+                <p className="text-lg leading-relaxed text-gray-700">
+                  Vi tilbyder sparring til forældre, der ønsker at forstå og hjælpe 
+                  deres børn til bedre trivsel og balance i en måske hektisk hverdag.
+                </p>
+                <p className="text-gray-600">
+                  Har dit barn en diagnose, fx autisme, ADHD, ADD eller angst, kan det 
+                  påvirke hele jeres familie. Det kan være hjælpsomt at snakke med nogen 
+                  om det og få nye perspektiver eller konkrete redskaber. Vi har flere 
+                  års erfaring med dette fra PPR.
+                </p>
+                <Link 
+                  href="/vi-tilbyder#forældresparring"
+                  className="inline-block rounded-full bg-orange-500 px-6 py-3 font-semibold text-white transition-all hover:bg-orange-600"
+                >
+                  Læs mere om forældresparring →
+                </Link>
+              </div>
+              
+              <div className="relative lg:order-1">
+                <Image
+                  src="/assets/pexels-kindel-media-8550841.jpg"
+                  alt="Familie i samtale"
+                  className="h-80 w-full rounded-lg object-cover shadow-lg"
+                  width={600}
+                  height={400}
+                />
+                <div className="absolute inset-0 rounded-lg bg-gradient-to-t from-black/20 to-transparent"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Call to Action Section */}
+        <div className="bg-gray-800 py-16 text-center">
+          <div className="container mx-auto px-6">
+            <h2 className="mb-4 text-3xl font-bold text-white">
+              Klar til at tage det første skridt?
+            </h2>
+            <p className="mb-8 text-xl text-gray-300">
+              Vi har kort ventetid og er klar til at hjælpe dig videre
+            </p>
+            <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
+              <Link
+                href="/kontakt"
+                className="inline-block rounded-full bg-orange-500 px-8 py-4 text-xl font-semibold text-white transition-all hover:bg-orange-600"
+              >
+                📞 Bestil tid nu
+              </Link>
+              <Link
+                href="/priser"
+                className="inline-block rounded-full border-2 border-white px-8 py-4 text-xl font-semibold text-white transition-all hover:bg-white hover:text-gray-800"
+              >
+                💰 Se priser
+              </Link>
+            </div>
+            <p className="mt-6 text-sm text-gray-400">
+              📍 Vi holder til i Andkærhus, Vejle • ⏰ Kort ventetid • 🏥 Autoriserede psykologer
+            </p>
+          </div>
         </div>
       </section>
     </main>

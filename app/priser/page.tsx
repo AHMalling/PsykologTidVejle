@@ -1,32 +1,152 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 export default function Priser() {
   return (
-    <div className=" bg-orange-200 ">
-      <div className="prose-base flex justify-center px-6 pt-24 sm:px-32">
-        <div className="prose max-w-lg">
-          <div>
-            <h1>Priser</h1>
-          </div>
-          <div>
-            <div className="my-8 flex grid-cols-3 flex-col gap-8 sm:-mx-16 sm:grid">
-              <div className="grid grid-cols-1  bg-orange-300/80 p-3 text-center shadow-md">
-                <p>Individuelle samtaler </p>
-                <p className="mt-12 text-3xl font-bold">1050,-</p>
-                <p>50 MIN.</p>
-              </div>
-              <div className="grid grid-cols-1  bg-orange-300/80 p-3 text-center shadow-md">
-                <p>Individuelle samtaler for studerende og unge under 25 år </p>
-                <p className="text-3xl font-bold sm:-mt-2">950,-</p>
-                <p>50 MIN.</p>
-              </div>
-              <div className="grid grid-cols-1  bg-orange-300/80 p-3 text-center shadow-md">
-                <p>Forældresparring</p>
-                <p className="mt-12 text-3xl font-bold">1.250,-</p>
-                <p>75 MIN.</p>
+    <div className="bg-orange-50">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-orange-100 to-orange-200 py-20">
+        <div className="container mx-auto px-6 text-center">
+          <h1 className="mb-6 text-4xl font-bold text-gray-800 sm:text-5xl">
+            Priser og betingelser
+          </h1>
+          <p className="mx-auto max-w-2xl text-xl leading-relaxed text-gray-700">
+            Transparente priser og gode betingelser for psykologhjælp i Vejle
+          </p>
+        </div>
+      </section>
+
+      {/* Pricing Cards Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-6">
+          <div className="grid gap-8 md:grid-cols-3">
+            {/* Individual Sessions */}
+            <div className="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-xl transition-all hover:shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-orange-100 opacity-0 transition-opacity group-hover:opacity-100"></div>
+              <div className="relative z-10">
+                <div className="mb-6 text-center">
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-orange-500 text-2xl text-white">
+                    👤
+                  </div>
+                  <h3 className="mb-2 text-xl font-bold text-gray-800">
+                    Individuelle samtaler
+                  </h3>
+                  <p className="text-gray-600">Personlig psykologhjælp</p>
+                </div>
+                
+                <div className="mb-6 text-center">
+                  <div className="mb-2 text-4xl font-bold text-orange-500">1.050,-</div>
+                  <div className="text-sm text-gray-500">50 minutter</div>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-2">
+                    <span className="text-green-500">✓</span>
+                    <span className="text-sm text-gray-700">Professionel psykologhjælp</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span className="text-green-500">✓</span>
+                    <span className="text-sm text-gray-700">Autoriseret psykolog</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span className="text-green-500">✓</span>
+                    <span className="text-sm text-gray-700">Tilpasset dit tempo</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span className="text-green-500">✓</span>
+                    <span className="text-sm text-gray-700">Fuld tavshedspligt</span>
+                  </div>
+                </div>
               </div>
             </div>
+
+            {/* Young People */}
+            <div className="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-xl transition-all hover:shadow-2xl border-2 border-orange-300">
+              <div className="absolute -right-4 -top-4 rounded-full bg-orange-500 px-3 py-1 text-xs font-bold text-white transform rotate-12">
+                POPULÆR
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-orange-100 opacity-0 transition-opacity group-hover:opacity-100"></div>
+              <div className="relative z-10">
+                <div className="mb-6 text-center">
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-orange-500 text-2xl text-white">
+                    🎓
+                  </div>
+                  <h3 className="mb-2 text-xl font-bold text-gray-800">
+                    Studerende & unge
+                  </h3>
+                  <p className="text-gray-600">Under 25 år</p>
+                </div>
+                
+                <div className="mb-6 text-center">
+                  <div className="mb-1 text-4xl font-bold text-orange-500">950,-</div>
+                  <div className="text-sm text-gray-500 line-through">1.050,-</div>
+                  <div className="text-sm text-gray-500">50 minutter</div>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-2">
+                    <span className="text-green-500">✓</span>
+                    <span className="text-sm text-gray-700">100 kr. rabat for unge</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span className="text-green-500">✓</span>
+                    <span className="text-sm text-gray-700">Samme kvalitet som voksne</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span className="text-green-500">✓</span>
+                    <span className="text-sm text-gray-700">Forståelse for ungeudfordringer</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span className="text-green-500">✓</span>
+                    <span className="text-sm text-gray-700">Forældre kan kontakte os</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Parental Guidance */}
+            <div className="group relative overflow-hidden rounded-2xl bg-white p-8 shadow-xl transition-all hover:shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-orange-100 opacity-0 transition-opacity group-hover:opacity-100"></div>
+              <div className="relative z-10">
+                <div className="mb-6 text-center">
+                  <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-orange-500 text-2xl text-white">
+                    👨‍👩‍👧‍👦
+                  </div>
+                  <h3 className="mb-2 text-xl font-bold text-gray-800">
+                    Forældresparring
+                  </h3>
+                  <p className="text-gray-600">Vejledning til forældre</p>
+                </div>
+                
+                <div className="mb-6 text-center">
+                  <div className="mb-2 text-4xl font-bold text-orange-500">1.250,-</div>
+                  <div className="text-sm text-gray-500">75 minutter</div>
+                </div>
+
+                <div className="space-y-3">
+                  <div className="flex items-center space-x-2">
+                    <span className="text-green-500">✓</span>
+                    <span className="text-sm text-gray-700">Længere sessioner</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span className="text-green-500">✓</span>
+                    <span className="text-sm text-gray-700">PPR-erfaring</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span className="text-green-500">✓</span>
+                    <span className="text-sm text-gray-700">Fokus på barnets trivsel</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <span className="text-green-500">✓</span>
+                    <span className="text-sm text-gray-700">Praktiske redskaber</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
             <h2 className="mb-0">Tilskud</h2>
             <p>
               Vi kan desværre ikke modtage klienter med henvisning fra egen
